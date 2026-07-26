@@ -1,0 +1,1456 @@
+{
+  "updated": "2026-07-21",
+  "total_files": 93,
+  "categories": {
+    "优惠价格": [
+      {
+        "name": "P_C_价格表",
+        "fullname": "P_C_价格表.png",
+        "ext": "png",
+        "size_kb": 136.7,
+        "path": "优惠价格/P_C_价格表.png",
+        "parent_dirs": [],
+        "url": "course_data/优惠价格/P_C_价格表.png",
+        "cdn_url": "course_data/优惠价格/P_C_价格表.png",
+        "raw_url": "course_data/优惠价格/P_C_价格表.png"
+      },
+      {
+        "name": "初一_学习机线上课_价格表",
+        "fullname": "初一_学习机线上课_价格表.png",
+        "ext": "png",
+        "size_kb": 164.7,
+        "path": "优惠价格/初一_学习机线上课_价格表.png",
+        "parent_dirs": [],
+        "url": "course_data/优惠价格/初一_学习机线上课_价格表.png",
+        "cdn_url": "course_data/优惠价格/初一_学习机线上课_价格表.png",
+        "raw_url": "course_data/优惠价格/初一_学习机线上课_价格表.png"
+      },
+      {
+        "name": "初一_线下_价格表",
+        "fullname": "初一_线下_价格表.png",
+        "ext": "png",
+        "size_kb": 256.4,
+        "path": "优惠价格/初一_线下_价格表.png",
+        "parent_dirs": [],
+        "url": "course_data/优惠价格/初一_线下_价格表.png",
+        "cdn_url": "course_data/优惠价格/初一_线下_价格表.png",
+        "raw_url": "course_data/优惠价格/初一_线下_价格表.png"
+      },
+      {
+        "name": "初一_超优班_价格表",
+        "fullname": "初一_超优班_价格表.png",
+        "ext": "png",
+        "size_kb": 161.5,
+        "path": "优惠价格/初一_超优班_价格表.png",
+        "parent_dirs": [],
+        "url": "course_data/优惠价格/初一_超优班_价格表.png",
+        "cdn_url": "course_data/优惠价格/初一_超优班_价格表.png",
+        "raw_url": "course_data/优惠价格/初一_超优班_价格表.png"
+      },
+      {
+        "name": "初二_初三_价格表",
+        "fullname": "初二_初三_价格表.png",
+        "ext": "png",
+        "size_kb": 151.3,
+        "path": "优惠价格/初二_初三_价格表.png",
+        "parent_dirs": [],
+        "url": "course_data/优惠价格/初二_初三_价格表.png",
+        "cdn_url": "course_data/优惠价格/初二_初三_价格表.png",
+        "raw_url": "course_data/优惠价格/初二_初三_价格表.png"
+      },
+      {
+        "name": "命名",
+        "fullname": "命名.txt",
+        "ext": "txt",
+        "size_kb": 0.1,
+        "path": "优惠价格/命名.txt",
+        "parent_dirs": [],
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/优惠价格/命名.txt",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/优惠价格/命名.txt",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/优惠价格/命名.txt"
+      }
+    ],
+    "政策": [
+      {
+        "name": "2025番禺区小升初升学",
+        "fullname": "2025番禺区小升初升学.pdf",
+        "ext": "pdf",
+        "size_kb": 3783.5,
+        "path": "政策/2025番禺区小升初升学.pdf",
+        "parent_dirs": [],
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/2025番禺区小升初升学.pdf",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/2025番禺区小升初升学.pdf",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/2025番禺区小升初升学.pdf"
+      },
+      {
+        "name": "2026名额分配结果(3)",
+        "fullname": "2026名额分配结果(3).pdf",
+        "ext": "pdf",
+        "size_kb": 3422.6,
+        "path": "政策/2026名额分配结果(3).pdf",
+        "parent_dirs": [],
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/2026名额分配结果(3).pdf",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/2026名额分配结果(3).pdf",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/2026名额分配结果(3).pdf"
+      },
+      {
+        "name": "初一_升学政策",
+        "fullname": "初一_升学政策.pptx",
+        "ext": "pptx",
+        "size_kb": 9930.5,
+        "path": "政策/初一_升学政策.pptx",
+        "parent_dirs": [],
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/初一_升学政策.pptx",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/初一_升学政策.pptx",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/初一_升学政策.pptx"
+      },
+      {
+        "name": "命名",
+        "fullname": "命名.txt",
+        "ext": "txt",
+        "size_kb": 0.2,
+        "path": "政策/命名.txt",
+        "parent_dirs": [],
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/命名.txt",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/命名.txt",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/政策/命名.txt"
+      }
+    ],
+    "老师介绍": [
+      {
+        "name": "聂维一老师+郭雨淇+总分752+语文116+广州铁一中学",
+        "fullname": "聂维一老师+郭雨淇+总分752+语文116+广州铁一中学.jpg",
+        "ext": "jpg",
+        "size_kb": 276.5,
+        "path": "老师介绍/26中考截图/聂维一老师+郭雨淇+总分752+语文116+广州铁一中学.jpg",
+        "parent_dirs": [
+          "26中考截图"
+        ],
+        "subject": "",
+        "url": "course_data/老师介绍/26中考截图/聂维一老师+郭雨淇+总分752+语文116+广州铁一中学.jpg",
+        "cdn_url": "course_data/老师介绍/26中考截图/聂维一老师+郭雨淇+总分752+语文116+广州铁一中学.jpg",
+        "raw_url": "course_data/老师介绍/26中考截图/聂维一老师+郭雨淇+总分752+语文116+广州铁一中学.jpg"
+      },
+      {
+        "name": "博文_聂维一_简介",
+        "fullname": "博文_聂维一_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 1093.3,
+        "path": "老师介绍/博文_聂维一_简介.pdf",
+        "parent_dirs": [],
+        "subject": "博文",
+        "url": "course_data/老师介绍/博文_聂维一_简介.pdf",
+        "cdn_url": "course_data/老师介绍/博文_聂维一_简介.pdf",
+        "raw_url": "course_data/老师介绍/博文_聂维一_简介.pdf"
+      },
+      {
+        "name": "博文_陈冬丽_简介",
+        "fullname": "博文_陈冬丽_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 1103.4,
+        "path": "老师介绍/博文_陈冬丽_简介.pdf",
+        "parent_dirs": [],
+        "subject": "博文",
+        "url": "course_data/老师介绍/博文_陈冬丽_简介.pdf",
+        "cdn_url": "course_data/老师介绍/博文_陈冬丽_简介.pdf",
+        "raw_url": "course_data/老师介绍/博文_陈冬丽_简介.pdf"
+      },
+      {
+        "name": "历史-冯家钰老师_简介",
+        "fullname": "历史-冯家钰老师_简介.png",
+        "ext": "png",
+        "size_kb": 2939.4,
+        "path": "老师介绍/历史-冯家钰老师_简介.png",
+        "parent_dirs": [],
+        "subject": "历史",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/老师介绍/历史-冯家钰老师_简介.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/老师介绍/历史-冯家钰老师_简介.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/老师介绍/历史-冯家钰老师_简介.png"
+      },
+      {
+        "name": "双语_李嘉信_简介",
+        "fullname": "双语_李嘉信_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 899.9,
+        "path": "老师介绍/双语_李嘉信_简介.pdf",
+        "parent_dirs": [],
+        "subject": "双语",
+        "url": "course_data/老师介绍/双语_李嘉信_简介.pdf",
+        "cdn_url": "course_data/老师介绍/双语_李嘉信_简介.pdf",
+        "raw_url": "course_data/老师介绍/双语_李嘉信_简介.pdf"
+      },
+      {
+        "name": "双语_杨淼_简介",
+        "fullname": "双语_杨淼_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 887.4,
+        "path": "老师介绍/双语_杨淼_简介.pdf",
+        "parent_dirs": [],
+        "subject": "双语",
+        "url": "course_data/老师介绍/双语_杨淼_简介.pdf",
+        "cdn_url": "course_data/老师介绍/双语_杨淼_简介.pdf",
+        "raw_url": "course_data/老师介绍/双语_杨淼_简介.pdf"
+      },
+      {
+        "name": "实验C_代欣雨_简介",
+        "fullname": "实验C_代欣雨_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 1216.8,
+        "path": "老师介绍/实验C_代欣雨_简介.pdf",
+        "parent_dirs": [],
+        "subject": "实验C",
+        "url": "course_data/老师介绍/实验C_代欣雨_简介.pdf",
+        "cdn_url": "course_data/老师介绍/实验C_代欣雨_简介.pdf",
+        "raw_url": "course_data/老师介绍/实验C_代欣雨_简介.pdf"
+      },
+      {
+        "name": "实验P_李小巧_简介",
+        "fullname": "实验P_李小巧_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 882.8,
+        "path": "老师介绍/实验P_李小巧_简介.pdf",
+        "parent_dirs": [],
+        "subject": "实验P",
+        "url": "course_data/老师介绍/实验P_李小巧_简介.pdf",
+        "cdn_url": "course_data/老师介绍/实验P_李小巧_简介.pdf",
+        "raw_url": "course_data/老师介绍/实验P_李小巧_简介.pdf"
+      },
+      {
+        "name": "托管_张雨碟_简介",
+        "fullname": "托管_张雨碟_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 514.8,
+        "path": "老师介绍/托管_张雨碟_简介.pdf",
+        "parent_dirs": [],
+        "subject": "托管",
+        "url": "course_data/老师介绍/托管_张雨碟_简介.pdf",
+        "cdn_url": "course_data/老师介绍/托管_张雨碟_简介.pdf",
+        "raw_url": "course_data/老师介绍/托管_张雨碟_简介.pdf"
+      },
+      {
+        "name": "托管_李芝惠_简介",
+        "fullname": "托管_李芝惠_简介.pdf",
+        "ext": "pdf",
+        "size_kb": 643.6,
+        "path": "老师介绍/托管_李芝惠_简介.pdf",
+        "parent_dirs": [],
+        "subject": "托管",
+        "url": "course_data/老师介绍/托管_李芝惠_简介.pdf",
+        "cdn_url": "course_data/老师介绍/托管_李芝惠_简介.pdf",
+        "raw_url": "course_data/老师介绍/托管_李芝惠_简介.pdf"
+      },
+      {
+        "name": "道法-于新朋老师_简介",
+        "fullname": "道法-于新朋老师_简介.png",
+        "ext": "png",
+        "size_kb": 668.4,
+        "path": "老师介绍/道法-于新朋老师_简介.png",
+        "parent_dirs": [],
+        "subject": "道法",
+        "url": "course_data/老师介绍/道法-于新朋老师_简介.png",
+        "cdn_url": "course_data/老师介绍/道法-于新朋老师_简介.png",
+        "raw_url": "course_data/老师介绍/道法-于新朋老师_简介.png"
+      }
+    ],
+    "课程大纲": [
+      {
+        "name": "【学习机】27C2暑秋大纲-数学",
+        "fullname": "【学习机】27C2暑秋大纲-数学.png",
+        "ext": "png",
+        "size_kb": 1808.2,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-数学.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-数学.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-数学.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-数学.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-物理",
+        "fullname": "【学习机】27C2暑秋大纲-物理.png",
+        "ext": "png",
+        "size_kb": 1799.2,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-物理.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-物理.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-物理.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-物理.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-英语",
+        "fullname": "【学习机】27C2暑秋大纲-英语.png",
+        "ext": "png",
+        "size_kb": 1846.9,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-英语.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-英语.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-英语.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-英语.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-语文",
+        "fullname": "【学习机】27C2暑秋大纲-语文.png",
+        "ext": "png",
+        "size_kb": 1816.0,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-语文.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-语文.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-语文.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C2暑秋大纲-语文.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-化学",
+        "fullname": "【学习机】27C3暑秋大纲-化学.png",
+        "ext": "png",
+        "size_kb": 1800.7,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-化学.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-化学.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-化学.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-化学.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-数学",
+        "fullname": "【学习机】27C3暑秋大纲-数学.png",
+        "ext": "png",
+        "size_kb": 1819.1,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-数学.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-数学.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-数学.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-数学.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-物理",
+        "fullname": "【学习机】27C3暑秋大纲-物理.png",
+        "ext": "png",
+        "size_kb": 1804.4,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-物理.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-物理.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-物理.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-物理.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-英语",
+        "fullname": "【学习机】27C3暑秋大纲-英语.png",
+        "ext": "png",
+        "size_kb": 1847.8,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-英语.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-英语.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-英语.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-英语.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-语文",
+        "fullname": "【学习机】27C3暑秋大纲-语文.png",
+        "ext": "png",
+        "size_kb": 1796.5,
+        "path": "课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-语文.png",
+        "parent_dirs": [
+          "【学习机会员卡】C2C3-27暑秋大纲"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "",
+        "url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-语文.png",
+        "cdn_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-语文.png",
+        "raw_url": "course_data/课程大纲/【学习机会员卡】C2C3-27暑秋大纲/【学习机】27C3暑秋大纲-语文.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-数学",
+        "fullname": "【学习机】27C2暑秋大纲-数学.png",
+        "ext": "png",
+        "size_kb": 1808.2,
+        "path": "课程大纲/线上/【学习机】27C2暑秋大纲-数学.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-数学.png",
+        "cdn_url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-数学.png",
+        "raw_url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-数学.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-英语",
+        "fullname": "【学习机】27C2暑秋大纲-英语.png",
+        "ext": "png",
+        "size_kb": 1846.9,
+        "path": "课程大纲/线上/【学习机】27C2暑秋大纲-英语.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-英语.png",
+        "cdn_url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-英语.png",
+        "raw_url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-英语.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-语文",
+        "fullname": "【学习机】27C2暑秋大纲-语文.png",
+        "ext": "png",
+        "size_kb": 1816.0,
+        "path": "课程大纲/线上/【学习机】27C2暑秋大纲-语文.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-语文.png",
+        "cdn_url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-语文.png",
+        "raw_url": "course_data/课程大纲/线上/【学习机】27C2暑秋大纲-语文.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-语文",
+        "fullname": "【学习机】27C3暑秋大纲-语文.png",
+        "ext": "png",
+        "size_kb": 1796.5,
+        "path": "课程大纲/线上/博文/【学习机】27C3暑秋大纲-语文.png",
+        "parent_dirs": [
+          "线上",
+          "博文"
+        ],
+        "grade": "",
+        "subject": "博文",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/博文/【学习机】27C3暑秋大纲-语文.png",
+        "cdn_url": "course_data/课程大纲/线上/博文/【学习机】27C3暑秋大纲-语文.png",
+        "raw_url": "course_data/课程大纲/线上/博文/【学习机】27C3暑秋大纲-语文.png"
+      },
+      {
+        "name": "博文_初一_大纲",
+        "fullname": "博文_初一_大纲.png",
+        "ext": "png",
+        "size_kb": 611.7,
+        "path": "课程大纲/线上/博文_初一_大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/博文_初一_大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/博文_初一_大纲.png",
+        "raw_url": "course_data/课程大纲/线上/博文_初一_大纲.png"
+      },
+      {
+        "name": "历史_暑假学习大纲",
+        "fullname": "历史_暑假学习大纲.png",
+        "ext": "png",
+        "size_kb": 548.0,
+        "path": "课程大纲/线上/历史_暑假学习大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/历史_暑假学习大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/历史_暑假学习大纲.png",
+        "raw_url": "course_data/课程大纲/线上/历史_暑假学习大纲.png"
+      },
+      {
+        "name": "历史_秋季学习大纲",
+        "fullname": "历史_秋季学习大纲.png",
+        "ext": "png",
+        "size_kb": 171.7,
+        "path": "课程大纲/线上/历史_秋季学习大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/历史_秋季学习大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/历史_秋季学习大纲.png",
+        "raw_url": "course_data/课程大纲/线上/历史_秋季学习大纲.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-英语",
+        "fullname": "【学习机】27C3暑秋大纲-英语.png",
+        "ext": "png",
+        "size_kb": 1847.8,
+        "path": "课程大纲/线上/双语/【学习机】27C3暑秋大纲-英语.png",
+        "parent_dirs": [
+          "线上",
+          "双语"
+        ],
+        "grade": "",
+        "subject": "双语",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/双语/【学习机】27C3暑秋大纲-英语.png",
+        "cdn_url": "course_data/课程大纲/线上/双语/【学习机】27C3暑秋大纲-英语.png",
+        "raw_url": "course_data/课程大纲/线上/双语/【学习机】27C3暑秋大纲-英语.png"
+      },
+      {
+        "name": "双语_初一_大纲",
+        "fullname": "双语_初一_大纲.png",
+        "ext": "png",
+        "size_kb": 796.0,
+        "path": "课程大纲/线上/双语_初一_大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/双语_初一_大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/双语_初一_大纲.png",
+        "raw_url": "course_data/课程大纲/线上/双语_初一_大纲.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-化学",
+        "fullname": "【学习机】27C3暑秋大纲-化学.png",
+        "ext": "png",
+        "size_kb": 1800.7,
+        "path": "课程大纲/线上/实验C/【学习机】27C3暑秋大纲-化学.png",
+        "parent_dirs": [
+          "线上",
+          "实验C"
+        ],
+        "grade": "",
+        "subject": "实验C",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/实验C/【学习机】27C3暑秋大纲-化学.png",
+        "cdn_url": "course_data/课程大纲/线上/实验C/【学习机】27C3暑秋大纲-化学.png",
+        "raw_url": "course_data/课程大纲/线上/实验C/【学习机】27C3暑秋大纲-化学.png"
+      },
+      {
+        "name": "【学习机】27C2暑秋大纲-物理",
+        "fullname": "【学习机】27C2暑秋大纲-物理.png",
+        "ext": "png",
+        "size_kb": 1799.2,
+        "path": "课程大纲/线上/实验P/【学习机】27C2暑秋大纲-物理.png",
+        "parent_dirs": [
+          "线上",
+          "实验P"
+        ],
+        "grade": "",
+        "subject": "实验P",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/实验P/【学习机】27C2暑秋大纲-物理.png",
+        "cdn_url": "course_data/课程大纲/线上/实验P/【学习机】27C2暑秋大纲-物理.png",
+        "raw_url": "course_data/课程大纲/线上/实验P/【学习机】27C2暑秋大纲-物理.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-物理",
+        "fullname": "【学习机】27C3暑秋大纲-物理.png",
+        "ext": "png",
+        "size_kb": 1804.4,
+        "path": "课程大纲/线上/实验P/【学习机】27C3暑秋大纲-物理.png",
+        "parent_dirs": [
+          "线上",
+          "实验P"
+        ],
+        "grade": "",
+        "subject": "实验P",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/实验P/【学习机】27C3暑秋大纲-物理.png",
+        "cdn_url": "course_data/课程大纲/线上/实验P/【学习机】27C3暑秋大纲-物理.png",
+        "raw_url": "course_data/课程大纲/线上/实验P/【学习机】27C3暑秋大纲-物理.png"
+      },
+      {
+        "name": "【学习机】27C3暑秋大纲-数学",
+        "fullname": "【学习机】27C3暑秋大纲-数学.png",
+        "ext": "png",
+        "size_kb": 1819.1,
+        "path": "课程大纲/线上/托管/【学习机】27C3暑秋大纲-数学.png",
+        "parent_dirs": [
+          "线上",
+          "托管"
+        ],
+        "grade": "",
+        "subject": "托管",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/托管/【学习机】27C3暑秋大纲-数学.png",
+        "cdn_url": "course_data/课程大纲/线上/托管/【学习机】27C3暑秋大纲-数学.png",
+        "raw_url": "course_data/课程大纲/线上/托管/【学习机】27C3暑秋大纲-数学.png"
+      },
+      {
+        "name": "托管_初一_大纲",
+        "fullname": "托管_初一_大纲.png",
+        "ext": "png",
+        "size_kb": 529.8,
+        "path": "课程大纲/线上/托管_初一_大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/托管_初一_大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/托管_初一_大纲.png",
+        "raw_url": "course_data/课程大纲/线上/托管_初一_大纲.png"
+      },
+      {
+        "name": "政治_暑假学习大纲",
+        "fullname": "政治_暑假学习大纲.png",
+        "ext": "png",
+        "size_kb": 521.4,
+        "path": "课程大纲/线上/政治_暑假学习大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/政治_暑假学习大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/政治_暑假学习大纲.png",
+        "raw_url": "course_data/课程大纲/线上/政治_暑假学习大纲.png"
+      },
+      {
+        "name": "政治_秋季学习大纲",
+        "fullname": "政治_秋季学习大纲.png",
+        "ext": "png",
+        "size_kb": 125.9,
+        "path": "课程大纲/线上/政治_秋季学习大纲.png",
+        "parent_dirs": [
+          "线上"
+        ],
+        "grade": "",
+        "subject": "",
+        "type": "线上",
+        "url": "course_data/课程大纲/线上/政治_秋季学习大纲.png",
+        "cdn_url": "course_data/课程大纲/线上/政治_秋季学习大纲.png",
+        "raw_url": "course_data/课程大纲/线上/政治_秋季学习大纲.png"
+      },
+      {
+        "name": "初一_博文_志高_大纲",
+        "fullname": "初一_博文_志高_大纲.png",
+        "ext": "png",
+        "size_kb": 2229.3,
+        "path": "课程大纲/线下/初一/博文/初一_博文_志高_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "博文"
+        ],
+        "grade": "初一",
+        "subject": "博文",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_志高_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_志高_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_志高_大纲.png"
+      },
+      {
+        "name": "初一_博文_精进_大纲",
+        "fullname": "初一_博文_精进_大纲.png",
+        "ext": "png",
+        "size_kb": 2152.4,
+        "path": "课程大纲/线下/初一/博文/初一_博文_精进_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "博文"
+        ],
+        "grade": "初一",
+        "subject": "博文",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_精进_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_精进_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_精进_大纲.png"
+      },
+      {
+        "name": "初一_博文_行远_大纲",
+        "fullname": "初一_博文_行远_大纲.png",
+        "ext": "png",
+        "size_kb": 2530.3,
+        "path": "课程大纲/线下/初一/博文/初一_博文_行远_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "博文"
+        ],
+        "grade": "初一",
+        "subject": "博文",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_行远_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_行远_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/博文/初一_博文_行远_大纲.png"
+      },
+      {
+        "name": "初一_双语_志高_大纲",
+        "fullname": "初一_双语_志高_大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 13111.4,
+        "path": "课程大纲/线下/初一/双语/初一_双语_志高_大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "双语"
+        ],
+        "grade": "初一",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/双语/初一_双语_志高_大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/双语/初一_双语_志高_大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/双语/初一_双语_志高_大纲.jpg"
+      },
+      {
+        "name": "初一_双语_行远_大纲",
+        "fullname": "初一_双语_行远_大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 13964.9,
+        "path": "课程大纲/线下/初一/双语/初一_双语_行远_大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "双语"
+        ],
+        "grade": "初一",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/双语/初一_双语_行远_大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/双语/初一_双语_行远_大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/双语/初一_双语_行远_大纲.jpg"
+      },
+      {
+        "name": "初一_双语_行远_大纲",
+        "fullname": "初一_双语_行远_大纲.png",
+        "ext": "png",
+        "size_kb": 2047.5,
+        "path": "课程大纲/线下/初一/双语/初一_双语_行远_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "双语"
+        ],
+        "grade": "初一",
+        "subject": "双语",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初一/双语/初一_双语_行远_大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初一/双语/初一_双语_行远_大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初一/双语/初一_双语_行远_大纲.png"
+      },
+      {
+        "name": "初一_实验P_行远_大纲",
+        "fullname": "初一_实验P_行远_大纲.png",
+        "ext": "png",
+        "size_kb": 1700.0,
+        "path": "课程大纲/线下/初一/实验P/初一_实验P_行远_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "实验P"
+        ],
+        "grade": "初一",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初一/实验P/初一_实验P_行远_大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初一/实验P/初一_实验P_行远_大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初一/实验P/初一_实验P_行远_大纲.png"
+      },
+      {
+        "name": "初一_实验P_超优_大纲",
+        "fullname": "初一_实验P_超优_大纲.png",
+        "ext": "png",
+        "size_kb": 1855.5,
+        "path": "课程大纲/线下/初一/实验P/初一_实验P_超优_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "实验P"
+        ],
+        "grade": "初一",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初一/实验P/初一_实验P_超优_大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初一/实验P/初一_实验P_超优_大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初一/实验P/初一_实验P_超优_大纲.png"
+      },
+      {
+        "name": "初一_托管_志高_大纲",
+        "fullname": "初一_托管_志高_大纲.png",
+        "ext": "png",
+        "size_kb": 2229.3,
+        "path": "课程大纲/线下/初一/托管/初一_托管_志高_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "托管"
+        ],
+        "grade": "初一",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_志高_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_志高_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_志高_大纲.png"
+      },
+      {
+        "name": "初一_托管_精进_大纲",
+        "fullname": "初一_托管_精进_大纲.png",
+        "ext": "png",
+        "size_kb": 2195.9,
+        "path": "课程大纲/线下/初一/托管/初一_托管_精进_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "托管"
+        ],
+        "grade": "初一",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_精进_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_精进_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_精进_大纲.png"
+      },
+      {
+        "name": "初一_托管_行远_大纲",
+        "fullname": "初一_托管_行远_大纲.png",
+        "ext": "png",
+        "size_kb": 2324.1,
+        "path": "课程大纲/线下/初一/托管/初一_托管_行远_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "托管"
+        ],
+        "grade": "初一",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_行远_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_行远_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_行远_大纲.png"
+      },
+      {
+        "name": "初一_托管_超优_大纲",
+        "fullname": "初一_托管_超优_大纲.png",
+        "ext": "png",
+        "size_kb": 2242.1,
+        "path": "课程大纲/线下/初一/托管/初一_托管_超优_大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初一",
+          "托管"
+        ],
+        "grade": "初一",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_超优_大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_超优_大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初一/托管/初一_托管_超优_大纲.png"
+      },
+      {
+        "name": "学习机W-志高-C3暑秋大纲",
+        "fullname": "学习机W-志高-C3暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 3075.7,
+        "path": "课程大纲/线下/初三/博文/学习机W-志高-C3暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "博文"
+        ],
+        "grade": "初三",
+        "subject": "博文",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/博文/学习机W-志高-C3暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/博文/学习机W-志高-C3暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/博文/学习机W-志高-C3暑秋大纲.png"
+      },
+      {
+        "name": "学习机Y-志高-C3暑秋大纲",
+        "fullname": "学习机Y-志高-C3暑秋大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 12793.6,
+        "path": "课程大纲/线下/初三/双语/学习机Y-志高-C3暑秋大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "双语"
+        ],
+        "grade": "初三",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-志高-C3暑秋大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-志高-C3暑秋大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-志高-C3暑秋大纲.jpg"
+      },
+      {
+        "name": "学习机Y-精进-C3暑秋大纲",
+        "fullname": "学习机Y-精进-C3暑秋大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 12746.8,
+        "path": "课程大纲/线下/初三/双语/学习机Y-精进-C3暑秋大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "双语"
+        ],
+        "grade": "初三",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-精进-C3暑秋大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-精进-C3暑秋大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-精进-C3暑秋大纲.jpg"
+      },
+      {
+        "name": "学习机Y-行远-C3暑秋大纲",
+        "fullname": "学习机Y-行远-C3暑秋大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 12908.7,
+        "path": "课程大纲/线下/初三/双语/学习机Y-行远-C3暑秋大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "双语"
+        ],
+        "grade": "初三",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-行远-C3暑秋大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-行远-C3暑秋大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/双语/学习机Y-行远-C3暑秋大纲.jpg"
+      },
+      {
+        "name": "学习机C-志高-C3暑秋大纲",
+        "fullname": "学习机C-志高-C3暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 964.1,
+        "path": "课程大纲/线下/初三/实验C/学习机C-志高-C3暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "实验C"
+        ],
+        "grade": "初三",
+        "subject": "实验C",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初三/实验C/学习机C-志高-C3暑秋大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初三/实验C/学习机C-志高-C3暑秋大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初三/实验C/学习机C-志高-C3暑秋大纲.png"
+      },
+      {
+        "name": "学习机P-志高-C3暑秋大纲",
+        "fullname": "学习机P-志高-C3暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 1857.9,
+        "path": "课程大纲/线下/初三/实验P/学习机P-志高-C3暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "实验P"
+        ],
+        "grade": "初三",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初三/实验P/学习机P-志高-C3暑秋大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初三/实验P/学习机P-志高-C3暑秋大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初三/实验P/学习机P-志高-C3暑秋大纲.png"
+      },
+      {
+        "name": "学习机P-行远-C3暑秋大纲",
+        "fullname": "学习机P-行远-C3暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2066.4,
+        "path": "课程大纲/线下/初三/实验P/学习机P-行远-C3暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "实验P"
+        ],
+        "grade": "初三",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/实验P/学习机P-行远-C3暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/实验P/学习机P-行远-C3暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/实验P/学习机P-行远-C3暑秋大纲.png"
+      },
+      {
+        "name": "学习机M-志高-C3暑秋大纲",
+        "fullname": "学习机M-志高-C3暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2422.6,
+        "path": "课程大纲/线下/初三/托管/学习机M-志高-C3暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "托管"
+        ],
+        "grade": "初三",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/托管/学习机M-志高-C3暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/托管/学习机M-志高-C3暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/托管/学习机M-志高-C3暑秋大纲.png"
+      },
+      {
+        "name": "学习机M-精进-C3暑秋大纲",
+        "fullname": "学习机M-精进-C3暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2318.8,
+        "path": "课程大纲/线下/初三/托管/学习机M-精进-C3暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初三",
+          "托管"
+        ],
+        "grade": "初三",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/托管/学习机M-精进-C3暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/托管/学习机M-精进-C3暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初三/托管/学习机M-精进-C3暑秋大纲.png"
+      },
+      {
+        "name": "学习机W-志高-C2暑秋大纲",
+        "fullname": "学习机W-志高-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 3264.4,
+        "path": "课程大纲/线下/初二/博文/学习机W-志高-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "博文"
+        ],
+        "grade": "初二",
+        "subject": "博文",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/博文/学习机W-志高-C2暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/博文/学习机W-志高-C2暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/博文/学习机W-志高-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机W-行远-C2暑秋大纲",
+        "fullname": "学习机W-行远-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 3614.3,
+        "path": "课程大纲/线下/初二/博文/学习机W-行远-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "博文"
+        ],
+        "grade": "初二",
+        "subject": "博文",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/博文/学习机W-行远-C2暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/博文/学习机W-行远-C2暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/博文/学习机W-行远-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机Y-志高-C2暑秋大纲",
+        "fullname": "学习机Y-志高-C2暑秋大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 14481.7,
+        "path": "课程大纲/线下/初二/双语/学习机Y-志高-C2暑秋大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "双语"
+        ],
+        "grade": "初二",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-志高-C2暑秋大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-志高-C2暑秋大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-志高-C2暑秋大纲.jpg"
+      },
+      {
+        "name": "学习机Y-精进-C2暑秋大纲-V2",
+        "fullname": "学习机Y-精进-C2暑秋大纲-V2.jpg",
+        "ext": "jpg",
+        "size_kb": 12892.1,
+        "path": "课程大纲/线下/初二/双语/学习机Y-精进-C2暑秋大纲-V2.jpg",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "双语"
+        ],
+        "grade": "初二",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-精进-C2暑秋大纲-V2.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-精进-C2暑秋大纲-V2.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-精进-C2暑秋大纲-V2.jpg"
+      },
+      {
+        "name": "学习机Y-行远-C2暑秋大纲",
+        "fullname": "学习机Y-行远-C2暑秋大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 13076.9,
+        "path": "课程大纲/线下/初二/双语/学习机Y-行远-C2暑秋大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "双语"
+        ],
+        "grade": "初二",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-行远-C2暑秋大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-行远-C2暑秋大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-行远-C2暑秋大纲.jpg"
+      },
+      {
+        "name": "学习机Y-超优-C2暑秋大纲",
+        "fullname": "学习机Y-超优-C2暑秋大纲.jpg",
+        "ext": "jpg",
+        "size_kb": 12902.1,
+        "path": "课程大纲/线下/初二/双语/学习机Y-超优-C2暑秋大纲.jpg",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "双语"
+        ],
+        "grade": "初二",
+        "subject": "双语",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-超优-C2暑秋大纲.jpg",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-超优-C2暑秋大纲.jpg",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/双语/学习机Y-超优-C2暑秋大纲.jpg"
+      },
+      {
+        "name": "学习机P-志高-C2暑秋大纲",
+        "fullname": "学习机P-志高-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 1819.5,
+        "path": "课程大纲/线下/初二/实验P/学习机P-志高-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "实验P"
+        ],
+        "grade": "初二",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初二/实验P/学习机P-志高-C2暑秋大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初二/实验P/学习机P-志高-C2暑秋大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初二/实验P/学习机P-志高-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机P-行远-C2暑秋大纲",
+        "fullname": "学习机P-行远-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 1915.5,
+        "path": "课程大纲/线下/初二/实验P/学习机P-行远-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "实验P"
+        ],
+        "grade": "初二",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初二/实验P/学习机P-行远-C2暑秋大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初二/实验P/学习机P-行远-C2暑秋大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初二/实验P/学习机P-行远-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机P-超优-C2暑秋大纲",
+        "fullname": "学习机P-超优-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 1897.1,
+        "path": "课程大纲/线下/初二/实验P/学习机P-超优-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "实验P"
+        ],
+        "grade": "初二",
+        "subject": "实验P",
+        "type": "线下",
+        "url": "course_data/课程大纲/线下/初二/实验P/学习机P-超优-C2暑秋大纲.png",
+        "cdn_url": "course_data/课程大纲/线下/初二/实验P/学习机P-超优-C2暑秋大纲.png",
+        "raw_url": "course_data/课程大纲/线下/初二/实验P/学习机P-超优-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机M-志高-C2暑秋大纲",
+        "fullname": "学习机M-志高-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2454.3,
+        "path": "课程大纲/线下/初二/托管/学习机M-志高-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "托管"
+        ],
+        "grade": "初二",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-志高-C2暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-志高-C2暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-志高-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机M-精进-C2暑秋大纲",
+        "fullname": "学习机M-精进-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2463.8,
+        "path": "课程大纲/线下/初二/托管/学习机M-精进-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "托管"
+        ],
+        "grade": "初二",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-精进-C2暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-精进-C2暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-精进-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机M-行远-C2暑秋大纲",
+        "fullname": "学习机M-行远-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2593.9,
+        "path": "课程大纲/线下/初二/托管/学习机M-行远-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "托管"
+        ],
+        "grade": "初二",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-行远-C2暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-行远-C2暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-行远-C2暑秋大纲.png"
+      },
+      {
+        "name": "学习机M-超优-C2暑秋大纲",
+        "fullname": "学习机M-超优-C2暑秋大纲.png",
+        "ext": "png",
+        "size_kb": 2448.4,
+        "path": "课程大纲/线下/初二/托管/学习机M-超优-C2暑秋大纲.png",
+        "parent_dirs": [
+          "线下",
+          "初二",
+          "托管"
+        ],
+        "grade": "初二",
+        "subject": "托管",
+        "type": "线下",
+        "url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-超优-C2暑秋大纲.png",
+        "cdn_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-超优-C2暑秋大纲.png",
+        "raw_url": "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/course_data/课程大纲/线下/初二/托管/学习机M-超优-C2暑秋大纲.png"
+      }
+    ],
+    "课表": [
+      {
+        "name": "【FY27初—-暑秋课表】0611",
+        "fullname": "【FY27初—-暑秋课表】0611.xlsx",
+        "ext": "xlsx",
+        "size_kb": 402.3,
+        "path": "课表/【FY27初—-暑秋课表】0611.xlsx",
+        "parent_dirs": [],
+        "grade": "",
+        "type": "",
+        "url": "course_data/课表/【FY27初—-暑秋课表】0611.xlsx",
+        "cdn_url": "course_data/课表/【FY27初—-暑秋课表】0611.xlsx",
+        "raw_url": "course_data/课表/【FY27初—-暑秋课表】0611.xlsx"
+      },
+      {
+        "name": "【FY27初二中考-暑秋课表】",
+        "fullname": "【FY27初二中考-暑秋课表】.xlsx",
+        "ext": "xlsx",
+        "size_kb": 336.1,
+        "path": "课表/【FY27初二中考-暑秋课表】.xlsx",
+        "parent_dirs": [],
+        "grade": "初二",
+        "type": "",
+        "url": "course_data/课表/【FY27初二中考-暑秋课表】.xlsx",
+        "cdn_url": "course_data/课表/【FY27初二中考-暑秋课表】.xlsx",
+        "raw_url": "course_data/课表/【FY27初二中考-暑秋课表】.xlsx"
+      },
+      {
+        "name": "【FY27初二中考-暑秋课表】0420",
+        "fullname": "【FY27初二中考-暑秋课表】0420.xlsx",
+        "ext": "xlsx",
+        "size_kb": 364.9,
+        "path": "课表/【FY27初二中考-暑秋课表】0420.xlsx",
+        "parent_dirs": [],
+        "grade": "初二",
+        "type": "",
+        "url": "course_data/课表/【FY27初二中考-暑秋课表】0420.xlsx",
+        "cdn_url": "course_data/课表/【FY27初二中考-暑秋课表】0420.xlsx",
+        "raw_url": "course_data/课表/【FY27初二中考-暑秋课表】0420.xlsx"
+      },
+      {
+        "name": "初一_暑秋_线上_课表",
+        "fullname": "初一_暑秋_线上_课表.png",
+        "ext": "png",
+        "size_kb": 35.5,
+        "path": "课表/初一_暑秋_线上_课表.png",
+        "parent_dirs": [],
+        "grade": "初一",
+        "type": "线上",
+        "url": "course_data/课表/初一_暑秋_线上_课表.png",
+        "cdn_url": "course_data/课表/初一_暑秋_线上_课表.png",
+        "raw_url": "course_data/课表/初一_暑秋_线上_课表.png"
+      },
+      {
+        "name": "初一_暑秋_线下_课表",
+        "fullname": "初一_暑秋_线下_课表.png",
+        "ext": "png",
+        "size_kb": 106.4,
+        "path": "课表/初一_暑秋_线下_课表.png",
+        "parent_dirs": [],
+        "grade": "初一",
+        "type": "线下",
+        "url": "course_data/课表/初一_暑秋_线下_课表.png",
+        "cdn_url": "course_data/课表/初一_暑秋_线下_课表.png",
+        "raw_url": "course_data/课表/初一_暑秋_线下_课表.png"
+      },
+      {
+        "name": "初一暑秋线下课表_企微文档",
+        "fullname": "初一暑秋线下课表_企微文档.txt",
+        "ext": "txt",
+        "size_kb": 0.1,
+        "path": "课表/初一暑秋线下课表_企微文档.txt",
+        "parent_dirs": [],
+        "grade": "初一",
+        "type": "线下",
+        "url": "https://doc.weixin.qq.com/sheet/e3_ASIALQYwAEICNJWRtuHudScKiNT1d?scode=AN4A-gezABEkKFv4OFASIALQYwAEI&tab=000012",
+        "is_link": true,
+        "cdn_url": "https://doc.weixin.qq.com/sheet/e3_ASIALQYwAEICNJWRtuHudScKiNT1d?scode=AN4A-gezABEkKFv4OFASIALQYwAEI&tab=000012",
+        "raw_url": "https://doc.weixin.qq.com/sheet/e3_ASIALQYwAEICNJWRtuHudScKiNT1d?scode=AN4A-gezABEkKFv4OFASIALQYwAEI&tab=000012"
+      },
+      {
+        "name": "初三_暑秋_线下_课表",
+        "fullname": "初三_暑秋_线下_课表.png",
+        "ext": "png",
+        "size_kb": 94.6,
+        "path": "课表/初三_暑秋_线下_课表.png",
+        "parent_dirs": [],
+        "grade": "初三",
+        "type": "线下",
+        "url": "course_data/课表/初三_暑秋_线下_课表.png",
+        "cdn_url": "course_data/课表/初三_暑秋_线下_课表.png",
+        "raw_url": "course_data/课表/初三_暑秋_线下_课表.png"
+      },
+      {
+        "name": "初二_暑秋_线下_课表",
+        "fullname": "初二_暑秋_线下_课表.png",
+        "ext": "png",
+        "size_kb": 101.2,
+        "path": "课表/初二_暑秋_线下_课表.png",
+        "parent_dirs": [],
+        "grade": "初二",
+        "type": "线下",
+        "url": "course_data/课表/初二_暑秋_线下_课表.png",
+        "cdn_url": "course_data/课表/初二_暑秋_线下_课表.png",
+        "raw_url": "course_data/课表/初二_暑秋_线下_课表.png"
+      },
+      {
+        "name": "春、暑秋FY26课程总表桌面版最新版",
+        "fullname": "春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "ext": "xlsx",
+        "size_kb": 310.8,
+        "path": "课表/春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "parent_dirs": [],
+        "grade": "",
+        "type": "",
+        "url": "course_data/课表/春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "cdn_url": "course_data/课表/春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "raw_url": "course_data/课表/春、暑秋FY26课程总表桌面版最新版.xlsx"
+      },
+      {
+        "name": "【FY27初—-暑秋课表】0611",
+        "fullname": "【FY27初—-暑秋课表】0611.xlsx",
+        "ext": "xlsx",
+        "size_kb": 402.3,
+        "path": "课表/线下/【FY27初—-暑秋课表】0611.xlsx",
+        "parent_dirs": [
+          "线下"
+        ],
+        "grade": "",
+        "type": "线下",
+        "url": "course_data/课表/线下/【FY27初—-暑秋课表】0611.xlsx",
+        "cdn_url": "course_data/课表/线下/【FY27初—-暑秋课表】0611.xlsx",
+        "raw_url": "course_data/课表/线下/【FY27初—-暑秋课表】0611.xlsx"
+      },
+      {
+        "name": "春、暑秋FY26课程总表桌面版最新版",
+        "fullname": "春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "ext": "xlsx",
+        "size_kb": 310.8,
+        "path": "课表/线下/春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "parent_dirs": [
+          "线下"
+        ],
+        "grade": "",
+        "type": "线下",
+        "url": "course_data/课表/线下/春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "cdn_url": "course_data/课表/线下/春、暑秋FY26课程总表桌面版最新版.xlsx",
+        "raw_url": "course_data/课表/线下/春、暑秋FY26课程总表桌面版最新版.xlsx"
+      },
+      {
+        "name": "暑假",
+        "fullname": "暑假.xls",
+        "ext": "xls",
+        "size_kb": 20.5,
+        "path": "课表/线下/暑假.xls",
+        "parent_dirs": [
+          "线下"
+        ],
+        "grade": "",
+        "type": "线下",
+        "url": "course_data/课表/线下/暑假.xls",
+        "cdn_url": "course_data/课表/线下/暑假.xls",
+        "raw_url": "course_data/课表/线下/暑假.xls"
+      },
+      {
+        "name": "暑秋",
+        "fullname": "暑秋.xlsx",
+        "ext": "xlsx",
+        "size_kb": 364.9,
+        "path": "课表/线下/暑秋.xlsx",
+        "parent_dirs": [
+          "线下"
+        ],
+        "grade": "",
+        "type": "线下",
+        "url": "course_data/课表/线下/暑秋.xlsx",
+        "cdn_url": "course_data/课表/线下/暑秋.xlsx",
+        "raw_url": "course_data/课表/线下/暑秋.xlsx"
+      }
+    ]
+  }
+}

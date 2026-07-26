@@ -17,6 +17,7 @@ const Admin: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [resources, setResources] = useState<Resource[]>([]);
   const [loading, setLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   // Upload state
   const [uploadCategory, setUploadCategory] = useState<string>('课程大纲');
@@ -31,6 +32,9 @@ const Admin: React.FC = () => {
   useEffect(() => {
     if (!user || user.role !== 'admin') { navigate('/search'); return; }
     loadStats(); loadUsers(); loadResources();
+    const h = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', h);
+    return () => window.removeEventListener('resize', h);
   }, []);
 
   const loadStats = async () => { try { setStats(await getStats()); } catch { /* */ } };
@@ -91,7 +95,7 @@ const Admin: React.FC = () => {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '24px 16px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: isMobile ? '12px 8px' : '24px 16px' }}>
         <Tabs
           defaultActiveKey="dashboard"
           items={[
@@ -119,7 +123,8 @@ const Admin: React.FC = () => {
                 <Table
                   dataSource={users}
                   rowKey="id"
-                  size="small"
+                  size={isMobile ? 'small' : 'small'}
+                  scroll={{ x: 400 }}
                   columns={[
                     { title: 'ID', dataIndex: 'id', width: 60 },
                     { title: '用户名', dataIndex: 'username' },
@@ -150,7 +155,8 @@ const Admin: React.FC = () => {
                 <Table
                   dataSource={resources}
                   rowKey="id"
-                  size="small"
+                  size={isMobile ? 'small' : 'small'}
+                  scroll={{ x: 500 }}
                   columns={[
                     { title: 'ID', dataIndex: 'id', width: 60 },
                     { title: '名称', dataIndex: 'name', ellipsis: true, width: 220 },

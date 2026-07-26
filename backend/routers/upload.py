@@ -99,10 +99,14 @@ def build_subdir(course_type: str = "", grade: str = "", subject: str = "", seme
 
 
 def _do_upload_file(file: UploadFile, category: str, subdir: str, grade: str, subject: str, course_type: str, semester: str, teacher: str, db: Session):
-    ext = Path(file.filename).suffix.lower()  # type: ignore
+    filename = file.filename  # type: ignore
+    # 拒绝 Excel/Office 临时文件（~开头）
+    if filename.startswith("~$"):
+        raise HTTPException(400, f"拒绝临时文件: {filename}")
+    ext = Path(filename).suffix.lower()
     if ext not in SUPPORTED_EXTS:
         raise HTTPException(400, f"不支持的类型: {ext}")
-    auto = extract_metadata(file.filename, category)  # type: ignore
+    auto = extract_metadata(filename, category)
     meta = {
         "grade": grade or auto["grade"],
         "subject": subject or auto["subject"],
@@ -110,7 +114,7 @@ def _do_upload_file(file: UploadFile, category: str, subdir: str, grade: str, su
         "semester": semester or auto["semester"],
         "teacher": teacher or auto["teacher"],
     }
-    return save_and_record(file.file, file.filename, category, meta, db, subdir)  # type: ignore
+    return save_and_record(file.file, filename, category, meta, db, subdir)  # type: ignore
 
 
 @router.post("/file")
@@ -171,11 +175,15 @@ async def upload_multiple_files(
     results = []
     for f in files:
         try:
-            ext = Path(f.filename).suffix.lower()  # type: ignore
-            if ext not in SUPPORTED_EXTS:
-                results.append({"filename": f.filename, "status": "error", "message": f"不支持的类型: {ext}"})
+            filename = f.filename  # type: ignore
+            if filename.startswith("~$"):
+                results.append({"filename": filename, "status": "error", "message": "Excel/Office 临时文件"})
                 continue
-            auto = extract_metadata(f.filename, category)  # type: ignore
+            ext = Path(filename).suffix.lower()  # type: ignore
+            if ext not in SUPPORTED_EXTS:
+                results.append({"filename": filename, "status": "error", "message": f"不支持的类型: {ext}"})
+                continue
+            auto = extract_metadata(filename, category)  # type: ignore
             meta = {
                 "grade": grade or auto["grade"],
                 "subject": subject or auto["subject"],

@@ -17,6 +17,14 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
   const [loading, setLoading] = useState(false);
   const [viewerError, setViewerError] = useState(false);
   const [downloadBlob, setDownloadBlob] = useState<{ url: string; name: string } | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const h = () => setIsMobile(window.innerWidth < 768);
+    h();
+    window.addEventListener('resize', h);
+    return () => window.removeEventListener('resize', h);
+  }, []);
 
   useEffect(() => {
     if (!resource || !visible) {
@@ -140,7 +148,9 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
       open={visible}
       onCancel={onClose}
       footer={null}
-      width={880}
+      width={isMobile ? '98%' : 880}
+      style={{ maxWidth: 900, top: isMobile ? 10 : undefined }}
+      styles={{ body: { maxHeight: isMobile ? '85vh' : undefined, padding: isMobile ? 12 : undefined } }}
       title={
         <div style={{ fontSize: 14 }}>
           <Text strong>{resource.name}</Text>

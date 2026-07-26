@@ -1,0 +1,117 @@
+{
+  "version": "FY27",
+  "update_date": "2026-07-22",
+  "note": "数据来源：FY27新初一暑秋价格表 2026.7-8",
+  "summer": {
+    "su_yang_tuo_guan": {
+      "name": "暑假班·素养托管",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下", "线上"],
+      "origin": 3240,
+      "discount": { "1": 100, "2": 261, "3": 907, "4": 948 },
+      "discount_label": "立减"
+    },
+    "chao_you": {
+      "name": "暑假班·超优",
+      "grade": ["初一"],
+      "type": ["线下"],
+      "origin": 3960,
+      "discount": { "1": "0.95", "2": "0.90", "3": "0.90", "4": "0.90" },
+      "discount_label": "折扣"
+    },
+    "shi_yan_p": {
+      "name": "暑假班·实验P",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下"],
+      "origin": 3800,
+      "discount": { "1": "0.95", "2": "0.90", "3": "0.85", "4": "0.82" },
+      "discount_label": "折扣"
+    },
+    "shi_yan_c": {
+      "name": "暑假班·实验C",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下"],
+      "origin": 3600,
+      "discount": { "1": "0.95", "2": "0.90", "3": "0.85", "4": "0.82" },
+      "discount_label": "折扣"
+    },
+    "shuang_yu": {
+      "name": "暑假班·双语",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下"],
+      "origin": 3400,
+      "discount": { "1": 80, "2": 240, "3": 600, "4": 720 },
+      "discount_label": "立减"
+    },
+    "bo_wen": {
+      "name": "暑假班·博文",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下"],
+      "origin": 3200,
+      "discount": { "1": 80, "2": 240, "3": 600, "4": 720 },
+      "discount_label": "立减"
+    },
+    "xue_xi_ji": {
+      "name": "暑假班·学习机(线上)",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线上"],
+      "origin": 1980,
+      "discount": { "1": 50, "2": 120, "3": 300, "4": 400 },
+      "discount_label": "立减"
+    }
+  },
+  "autumn": {
+    "old_student": {
+      "name": "秋季班·老生续班",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下", "线上"],
+      "origin": 4590,
+      "discount": { "1": 200, "2": 400, "3": 700, "4": 800 },
+      "discount_label": "立减",
+      "periods": [
+        ["7-3", "7-8"],
+        ["7-17", "7-23"],
+        ["8-1", "8-7"],
+        ["8-16", "8-21"]
+      ]
+    },
+    "new_student": {
+      "name": "秋季班·新生",
+      "grade": ["初一", "初二", "初三"],
+      "type": ["线下", "线上"],
+      "origin": 4590,
+      "discount": { "1": 160, "2": 360, "3": 600, "4": 700 },
+      "discount_label": "立减"
+    }
+  },
+  "coupons": {
+    "pc_offline": {
+      "name": "实验P/C 线下券",
+      "amount": 400,
+      "type": "线下",
+      "use": "summer",
+      "desc": "暑假PC新科目使用"
+    },
+    "pc_online": {
+      "name": "实验P/C 线上券",
+      "amount": 100,
+      "type": "线上",
+      "use": "summer",
+      "desc": "学习机新科目使用"
+    },
+    "old_student": {
+      "name": "老生续班券",
+      "amount": 200,
+      "type": "全部",
+      "use": "autumn",
+      "desc": "老生续班"
+    },
+    "new_student": {
+      "name": "新生入门券",
+      "amount": 100,
+      "type": "全部",
+      "use": "all",
+      "desc": "新生首单"
+    }
+  }
+}
