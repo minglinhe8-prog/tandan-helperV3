@@ -1,0 +1,10 @@
+venv/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+*.db
+.env
+.streamlit/
+.DS_Store
+Thumbs.db
