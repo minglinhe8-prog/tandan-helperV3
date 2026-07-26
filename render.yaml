@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tandan-helper
+    runtime: python
+    buildCommand: pip install -r requirements.txt && cd frontend && npm install && npm run build && mkdir -p ../static && cp -r dist/* ../static/
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: PYTHON_VERSION
+        value: 3.11.9
+    plan: free
