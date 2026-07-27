@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Layout, Card, Row, Col, Form, Select, Checkbox, InputNumber, Button, Divider, Typography } from 'antd';
 import { CalculatorOutlined, ClearOutlined } from '@ant-design/icons';
 
@@ -85,9 +85,35 @@ const Calculator: React.FC = () => {
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [currentConfig, setCurrentConfig] = useState<PriceConfig | null>(null);
 
+  // 自动初始化默认配置
+  useEffect(() => {
+    const firstConfig = PRICE_CONFIGS[0];
+    if (firstConfig) {
+      form.setFieldsValue({
+        grade: firstConfig.grade,
+        semester: firstConfig.semester,
+        type: firstConfig.type,
+        isOldStudent: firstConfig.isOldStudent,
+        coupon: 0,
+      });
+      handleValuesChange({}, {
+        grade: firstConfig.grade,
+        semester: firstConfig.semester,
+        type: firstConfig.type,
+        isOldStudent: firstConfig.isOldStudent,
+        coupon: 0,
+      });
+    }
+  }, []);
+
   const handleValuesChange = (_: any, allValues: any) => {
     const { grade, semester, type, isOldStudent, coupon } = allValues;
-    if (!grade || !semester || !type || isOldStudent === undefined) { setResult(null); return; }
+    if (!grade || !semester || !type || isOldStudent === undefined) {
+      setResult(null);
+      setCurrentConfig(null);
+      setSelectedSubjects([]);
+      return;
+    }
     const config = PRICE_CONFIGS.find(
       c => c.grade === grade && c.semester === semester && c.type === type && c.isOldStudent === isOldStudent
     );
