@@ -101,8 +101,13 @@ const CalculatorAdmin: React.FC = () => {
 
   /* ====== 折扣类型切换 ====== */
   const handleTypeChange = (prefix: string, newType: string) => {
-    setByPrefix(RULES, prefix, newType);
-    const tiersPrefix = prefix.replace('.__type__', '').replace('.discountType', '.tiers');
+    // prefix is full path like 's1.rules.初一.old.discountType' — split to (parent, field)
+    const parts = prefix.split('.');
+    const field = parts.pop()!;
+    const parentPath = parts.join('.');
+    setByPrefix(RULES, parentPath, field, newType);
+    // 迁移 tier 值
+    const tiersPrefix = parentPath + '.tiers';
     const tiers = getByPrefix(RULES, tiersPrefix);
     if (tiers && Array.isArray(tiers)) {
       for (const t of tiers) {
@@ -114,7 +119,10 @@ const CalculatorAdmin: React.FC = () => {
   };
 
   const handleScopeChange = (prefix: string, val: string) => {
-    setByPrefix(RULES, prefix, val);
+    const parts = prefix.split('.');
+    const field = parts.pop()!;
+    const parentPath = parts.join('.');
+    setByPrefix(RULES, parentPath, field, val);
     forceUpdate(n => n + 1);
   };
 
