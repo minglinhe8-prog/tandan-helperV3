@@ -61,6 +61,16 @@ class ResourceListResponse(BaseModel):
     items: List[ResourceOut]
 
 
+class ResourceUpdate(BaseModel):
+    name: Optional[str] = None
+    grade: Optional[str] = None
+    subject: Optional[str] = None
+    category: Optional[str] = None
+    course_type: Optional[str] = None
+    semester: Optional[str] = None
+    teacher: Optional[str] = None
+
+
 # 收藏相关
 class FavoriteCreate(BaseModel):
     resource_id: int

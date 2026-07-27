@@ -1,10 +1,10 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from typing import List
+from typing import List, Optional
 from datetime import datetime
 from database import get_db
 from models import User, Resource, Favorite, History
-from schemas import UserOut, ResourceOut, UserUpdate
+from schemas import UserOut, ResourceOut, UserUpdate, ResourceUpdate
 from auth_utils import get_current_admin_user, get_password_hash
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
@@ -75,31 +75,70 @@ def delete_user(
     return {"message": "用户已删除"}
 
 
-# ========== 资源管理 ==========
+# ========== 资源管理（增强版） ==========
 @router.get("/resources", response_model=List[ResourceOut])
 def list_all_resources(
+    category: Optional[str] = Query(None, description="按分类筛选"),
+    grade: Optional[str] = Query(None, description="按年级筛选"),
+    keyword: Optional[str] = Query(None, description="按名称关键词搜索"),
     db: Session = Depends(get_db),
     admin: User = Depends(get_current_admin_user)
 ):
-    return db.query(Resource).all()
+    """获取所有资源，支持分类、年级、关键词过滤"""
+    query = db.query(Resource)
+    if category:
+        query = query.filter(Resource.category == category)
+    if grade:
+        query = query.filter(Resource.grade == grade)
+    if keyword:
+        query = query.filter(Resource.name.contains(keyword))
+    return query.order_by(Resource.id.desc()).all()
 
 
 @router.put("/resources/{resource_id}")
 def update_resource(
     resource_id: int,
-    update_data: dict,
+    update_data: ResourceUpdate,
     db: Session = Depends(get_db),
     admin: User = Depends(get_current_admin_user)
 ):
+    """更新资源元数据（名称、年级、科目、分类等）"""
     resource = db.query(Resource).filter(Resource.id == resource_id).first()
     if not resource:
         raise HTTPException(404, "资源不存在")
-    for key, value in update_data.items():
-        if hasattr(resource, key) and key != "id":
-            setattr(resource, key, value)
+    if update_data.name is not None:
+        resource.name = update_data.name
+    if update_data.grade is not None:
+        resource.grade = update_data.grade
+    if update_data.subject is not None:
+        resource.subject = update_data.subject
+    if update_data.category is not None:
+        resource.category = update_data.category
+    if update_data.course_type is not None:
+        resource.course_type = update_data.course_type
+    if update_data.semester is not None:
+        resource.semester = update_data.semester
+    if update_data.teacher is not None:
+        resource.teacher = update_data.teacher
     resource.updated_at = datetime.utcnow()
     db.commit()
     return {"message": "资源已更新"}
+
+
+@router.delete("/resources")
+def bulk_delete_resources(
+    ids: List[int] = Query(..., description="要删除的资源ID列表，逗号分隔"),
+    db: Session = Depends(get_db),
+    admin: User = Depends(get_current_admin_user)
+):
+    """批量删除资源（先清理关联表）"""
+    if not ids:
+        raise HTTPException(400, "请提供要删除的ID列表")
+    db.query(Favorite).filter(Favorite.resource_id.in_(ids)).delete(synchronize_session=False)
+    db.query(History).filter(History.resource_id.in_(ids)).delete(synchronize_session=False)
+    deleted = db.query(Resource).filter(Resource.id.in_(ids)).delete(synchronize_session=False)
+    db.commit()
+    return {"message": f"成功删除 {deleted} 个资源"}
 
 
 @router.delete("/resources/{resource_id}")

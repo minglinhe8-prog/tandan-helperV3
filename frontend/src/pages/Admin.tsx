@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Layout, Tabs, Table, Button, Card, Statistic, Row, Col, Tag, Modal, Input, Select, Space, message, Popconfirm, Switch, Typography } from 'antd';
+import { Layout, Tabs, Table, Button, Card, Statistic, Row, Col, Tag, Select, Space, message, Popconfirm, Switch, Typography } from 'antd';
 import { ArrowLeftOutlined, TeamOutlined, FileOutlined, DashboardOutlined, UploadOutlined, InboxOutlined } from '@ant-design/icons';
-import { getStats, getUsers, updateUser, deleteUser, getAllResources, deleteResource } from '../api/admin';
+import { getStats, getUsers, updateUser, deleteUser } from '../api/admin';
 import { getStoredUser } from '../api/auth';
 import { apiClient } from '../api/client';
-import type { User, Resource } from '../types';
+import ResourceTable from './Admin/ResourceTable';
+import type { User } from '../types';
 
 const { Text } = Typography;
 const { Content } = Layout;
@@ -15,7 +16,6 @@ const Admin: React.FC = () => {
   const user = getStoredUser();
   const [stats, setStats] = useState<{ total_users: number; total_resources: number; category_stats: Record<string, number> } | null>(null);
   const [users, setUsers] = useState<User[]>([]);
-  const [resources, setResources] = useState<Resource[]>([]);
   const [loading, setLoading] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -31,15 +31,15 @@ const Admin: React.FC = () => {
 
   useEffect(() => {
     if (!user || user.role !== 'admin') { navigate('/search'); return; }
-    loadStats(); loadUsers(); loadResources();
+    loadStats(); loadUsers();
     const h = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener('resize', h);
     return () => window.removeEventListener('resize', h);
   }, []);
 
+  const refreshResources = () => { loadStats(); };
   const loadStats = async () => { try { setStats(await getStats()); } catch { /* */ } };
   const loadUsers = async () => { try { setUsers(await getUsers()); } catch { /* */ } };
-  const loadResources = async () => { try { setResources(await getAllResources()); } catch { /* */ } };
 
   const handleToggleActive = async (userId: number, active: boolean) => {
     await updateUser(userId, { is_active: active });
@@ -49,11 +49,6 @@ const Admin: React.FC = () => {
   const handleDeleteUser = async (userId: number) => {
     try {
       await deleteUser(userId); message.success('用户已删除'); loadUsers();
-    } catch (e) { message.error('删除失败'); }
-  };
-  const handleDeleteResource = async (id: number) => {
-    try {
-      await deleteResource(id); message.success('已删除'); loadResources(); loadStats();
     } catch (e) { message.error('删除失败'); }
   };
 
@@ -75,7 +70,7 @@ const Admin: React.FC = () => {
       const fail = data.results.length - ok;
       if (fail) message.warning(`成功 ${ok} 个，失败 ${fail} 个`);
       else message.success(`全部 ${ok} 个上传成功`);
-      setUploadFiles([]); loadResources(); loadStats();
+      setUploadFiles([]); refreshResources();
     } catch (err: any) { message.error(err.response?.data?.detail || '上传失败'); }
     finally { setUploading(false); }
   };
@@ -155,28 +150,7 @@ const Admin: React.FC = () => {
             },
             {
               key: 'resources', label: <span><FileOutlined /> 资源管理</span>,
-              children: (
-                <Table
-                  dataSource={resources}
-                  rowKey="id"
-                  size={isMobile ? 'small' : 'small'}
-                  scroll={{ x: 500 }}
-                  columns={[
-                    { title: 'ID', dataIndex: 'id', width: 60 },
-                    { title: '名称', dataIndex: 'name', ellipsis: true, width: 220 },
-                    { title: '分类', dataIndex: 'category', width: 80, render: (c: string) => <Tag>{c}</Tag> },
-                    { title: '年级', dataIndex: 'grade', width: 80, render: (g: string) => g || '-' },
-                    { title: '科目', dataIndex: 'subject', width: 80, render: (s: string) => s || '-' },
-                    {
-                      title: '操作', render: (_: unknown, record: Resource) => (
-                        <Popconfirm title="确定删除？" onConfirm={() => handleDeleteResource(record.id)}>
-                          <Button type="link" danger size="small">删除</Button>
-                        </Popconfirm>
-                      ),
-                    },
-                  ]}
-                />
-              ),
+              children: <ResourceTable />,
             },
             {
               key: 'upload', label: <span><UploadOutlined /> 上传文件</span>,
