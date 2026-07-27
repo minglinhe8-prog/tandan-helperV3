@@ -195,3 +195,14 @@ def seed_resources(
         "skipped_too_small": skipped_tiny,
         "total_in_db": db.query(Resource).count(),
     }
+
+
+@router.post("/clean-tiny")
+def clean_tiny_resources(
+    db: Session = Depends(get_db),
+    admin: User = Depends(get_current_admin_user)
+):
+    """删除 <30KB 的可疑资源（损坏/临时文件）"""
+    deleted = db.query(Resource).filter(Resource.file_size < 30).delete()
+    db.commit()
+    return {"deleted": deleted, "remaining": db.query(Resource).count()}
