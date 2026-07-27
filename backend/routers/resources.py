@@ -153,19 +153,20 @@ def preview_resource(
     db: Session = Depends(get_db),
     current_user: User = Depends(auth_optional)
 ):
+    """文件预览：优先本地磁盘，否则 307 重定向到 GitHub Raw（永久可达）"""
+    from fastapi.responses import RedirectResponse
     resource = db.query(Resource).filter(Resource.id == resource_id).first()
     if not resource:
         raise HTTPException(status_code=404, detail="资源不存在")
+
+    # 本地文件存在 → 直接返回
     file_path = PROJECT_ROOT / resource.path
-    if not file_path.exists():
-        raise HTTPException(status_code=404, detail="文件不存在")
-    ext = Path(resource.path).suffix.lower()
-    media_type = MIME_MAP.get(ext, 'application/octet-stream')
-    return FileResponse(
-        path=str(file_path),
-        media_type=media_type,
-        headers={
-            "Content-Disposition": "inline",
-            "Cache-Control": "private, max-age=3600",
-        }
-    )
+    if file_path.exists():
+        ext = Path(resource.path).suffix.lower()
+        media_type = MIME_MAP.get(ext, 'application/octet-stream')
+        return FileResponse(path=str(file_path), media_type=media_type,
+            headers={"Content-Disposition": "inline", "Cache-Control": "private, max-age=3600"})
+
+    # 本地不存在 → 307 到 GitHub Raw
+    GITHUB_RAW = "https://raw.githubusercontent.com/minglinhe8-prog/tandan-helperV3/main"
+    return RedirectResponse(f"{GITHUB_RAW}/{resource.path}", status_code=307)
