@@ -98,12 +98,14 @@ def upload_to_github(target_path: Path, rel_path: str) -> str:
     if not token:
         return None
     try:
-        import base64, requests
+        import base64, requests, urllib.parse
         repo = os.getenv("GITHUB_REPO", "minglinhe8-prog/tandan-helperV3")
         branch = os.getenv("GITHUB_BRANCH", "main")
         with open(target_path, "rb") as f:
             content = base64.b64encode(f.read()).decode()
-        url = f"https://api.github.com/repos/{repo}/contents/{rel_path}"
+        # URL 编码中文字符
+        encoded_path = urllib.parse.quote(rel_path, safe="/")
+        url = f"https://api.github.com/repos/{repo}/contents/{encoded_path}"
         headers = {
             "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",
@@ -122,6 +124,8 @@ def upload_to_github(target_path: Path, rel_path: str) -> str:
         r = requests.put(url, headers=headers, json=body, timeout=15)
         if r.status_code in (200, 201):
             return r.json().get("content", {}).get("sha", "ok")
+        else:
+            print(f"GitHub push failed: {r.status_code} {r.text[:200]}")
     except Exception as e:
         print(f"GitHub 上传失败: {e}")
     return None
