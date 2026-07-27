@@ -195,7 +195,8 @@ const Calculator: React.FC = () => {
   const [selSubj, setSelSubj] = useState<Record<number, Record<string, Record<string, boolean>>>>({});
   const [result, setResult] = useState<any>(null);
 
-  if (loading || !DATA || !RULES) return <Spin tip="加载配置中..." style={{ margin: 80 }} />;
+  if (loading) return <div style={{ padding: 80, textAlign: 'center', fontSize: 18, color: '#6b7280' }}>⏳ 正在加载配置...</div>;
+  if (!DATA || !RULES) return <div style={{ padding: 80, textAlign: 'center', fontSize: 16, color: '#dc2626' }}>⚠️ 配置加载失败，请刷新页面或联系管理员</div>;
   const sc = RULES[scene];
   const sections = getSections(RULES, scene, grade, identity);
 
