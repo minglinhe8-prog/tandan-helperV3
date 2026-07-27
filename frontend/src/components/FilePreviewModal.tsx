@@ -41,8 +41,15 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
     if (isImage || isPdf) {
       setLoading(true);
       apiClient.get(`/resources/${resource.id}/preview`, { responseType: 'blob' })
-        .then(res => setBlobUrl(URL.createObjectURL(res.data)))
-        .catch(() => {})
+        .then(res => {
+          // PDF 也用 blob URL（解决 auth header 跨 iframe 失效）
+          setBlobUrl(URL.createObjectURL(res.data));
+        })
+        .catch(err => {
+          console.warn('preview fetch failed', err);
+          // 兜底：渲染 GitHub Raw
+          setBlobUrl('');
+        })
         .finally(() => setLoading(false));
     }
   }, [resource?.id, visible]);
@@ -70,12 +77,20 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
       return <Image src={blobUrl} alt={resource.name} style={{ maxWidth: '100%', maxHeight: '75vh', objectFit: 'contain' }} />;
     }
 
-    // PDF — 后端代理（本地→GitHub fallback）
+    // PDF — 用 blob URL（带 Authorization 头，避免 401）
     if (isPdf) {
       if (loading) return <Spin />;
+      if (blobUrl) {
+        return (
+          <div style={{ width: '100%', height: '75vh' }}>
+            <iframe src={blobUrl} title={resource.name} style={{ width: '100%', height: '100%', border: 'none' }} />
+          </div>
+        );
+      }
+      // 兜底：直接读 rawUrl（GitHub 老文件）
       return (
         <div style={{ width: '100%', height: '75vh' }}>
-          <iframe src={proxyUrl} title={resource.name} style={{ width: '100%', height: '100%', border: 'none' }} />
+          <iframe src={rawUrl} title={resource.name} style={{ width: '100%', height: '100%', border: 'none' }} />
         </div>
       );
     }
