@@ -71,7 +71,7 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
 
   // Office 文件用 GitHub Raw URL（公开可访问）
   const officeUrl = isOffice
-    ? `https://raw.githubusercontent.com/minglinhe8-prog/tandan-helper/master/${resource.path}`
+    ? `https://raw.githubusercontent.com/minglinhe8-prog/tandan-helperV3/main/${resource.path}`
     : '';
   const viewerUrl = isOffice
     ? `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(officeUrl)}`
