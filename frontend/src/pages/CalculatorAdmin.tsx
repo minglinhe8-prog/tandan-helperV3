@@ -67,7 +67,7 @@ const CalculatorAdmin: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {tiers.map((t: any, i: number) => (
+            {(tiers || []).map((t: any, i: number) => (
               <tr key={i}>
                 <td style={{ padding: '6px 8px', borderBottom: '1px solid #f3f4f6' }}>{i + 1}</td>
                 <td style={{ padding: '6px 8px', borderBottom: '1px solid #f3f4f6' }}>
@@ -209,7 +209,7 @@ const CalculatorAdmin: React.FC = () => {
                 return <Card key={ri} style={{ borderRadius: 8, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,.06)' }}>
                   <div style={{ padding: '10px 16px', borderBottom: '1px solid #f3f4f6', fontWeight: 600, fontSize: '.88rem', color: '#2563eb' }}>perQuarter 模式</div>
                   <div style={{ padding: 16 }}>
-                    {Object.entries(rl.quarters).map(([qq, qr]: any) => {
+                    {Object.entries(rl.quarters || {}).map(([qq, qr]: any) => {
                       const dt = qr.discountType || 'fixed';
                       const scp = qr.scope || 'row';
                       return <div key={qq} style={{ marginBottom: 14, padding: 10, border: '1px solid #e5e7eb', borderRadius: 6 }}>
