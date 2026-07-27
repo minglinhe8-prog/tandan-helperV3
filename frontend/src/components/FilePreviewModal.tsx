@@ -33,10 +33,13 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
     const isPdf = mime === '.pdf';
     const isOffice = ['.xlsx', '.xls', '.pptx', '.ppt'].includes(mime.toLowerCase());
 
-    // Office 文件走 Microsoft Office Online，不需要后端代理
+    // Office 走 Office Online，GitHub 无文件的（>50MB）用后端下载兜底
     if (isOffice) {
       setLoading(false);
       setViewerError(false);
+      apiClient.get(`/resources/${resource.id}/preview`, { responseType: 'blob' })
+        .then(res => setDownloadBlob({ url: URL.createObjectURL(res.data), name: resource.name }))
+        .catch(() => {});
       return;
     }
 
