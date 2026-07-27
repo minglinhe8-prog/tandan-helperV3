@@ -153,7 +153,13 @@ def _do_upload_file(file: UploadFile, category: str, subdir: str, grade: str, su
         "semester": semester or auto["semester"],
         "teacher": teacher or auto["teacher"],
     }
-    return save_and_record(file.file, filename, category, meta, db, subdir)  # type: ignore
+    result = save_and_record(file.file, filename, category, meta, db, subdir)  # type: ignore
+    # 检查 GitHub 推送结果
+    if result.get("id_at_github") is None and not os.getenv("GITHUB_TOKEN"):
+        return {**result, "warning": "未配置 GITHUB_TOKEN，Office 文件可能无法跨网络预览"}
+    if result.get("id_at_github") is None:
+        return {**result, "warning": "同步到 GitHub 失败。超过 50MB 的文件无法通过 GitHub API 推送"}
+    return result
 
 
 @router.post("/file")
