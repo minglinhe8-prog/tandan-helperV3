@@ -139,6 +139,7 @@ def seed_resources(
     inserted = 0
     skipped_ext = 0
     skipped_dup = 0
+    skipped_tiny = 0
 
     for root, dirs, files in os.walk(BASE):
         root_path = PyPath(root)
@@ -147,6 +148,12 @@ def seed_resources(
             ext = fpath.suffix.lower()
             if ext not in ALL_EXTS:
                 skipped_ext += 1
+                continue
+
+            # 小于 30KB 的文件视为可疑（损坏或临时文件），跳过
+            size_kb = fpath.stat().st_size / 1024
+            if size_kb < 30:
+                skipped_tiny += 1
                 continue
 
             rel = fpath.relative_to(PyPath(__file__).parent.parent.parent).as_posix()
@@ -167,8 +174,6 @@ def seed_resources(
                     m = re.search(r'([\u4e00-\u9fa5]{2,4})老师', fname)
                     if m: teacher = m.group(1)
 
-            size_kb = fpath.stat().st_size / 1024
-
             existing = db.query(Resource).filter(Resource.path == rel).first()
             if existing:
                 skipped_dup += 1
@@ -187,5 +192,6 @@ def seed_resources(
         "inserted": inserted,
         "skipped_duplicate": skipped_dup,
         "skipped_unsupported_ext": skipped_ext,
+        "skipped_too_small": skipped_tiny,
         "total_in_db": db.query(Resource).count(),
     }
