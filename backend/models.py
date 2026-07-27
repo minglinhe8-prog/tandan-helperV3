@@ -29,6 +29,7 @@ class Resource(Base):
     teacher = Column(String, nullable=True)
     file_size = Column(Float, nullable=True)
     mime_type = Column(String, nullable=True)
+    supabase_url = Column(String, nullable=True)  # Supabase 公开直链（大文件永久存储）
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 

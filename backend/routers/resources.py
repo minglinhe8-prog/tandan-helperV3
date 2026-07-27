@@ -152,10 +152,15 @@ def preview_resource(
     request: Request,
     db: Session = Depends(get_db)
 ):
-    """文件预览：本地优先，否则服务端代理 GitHub Raw。无需登录（Office Online 需要公开 URL）"""
+    """文件预览：Supabase 公开 URL > 本地磁盘 > GitHub Raw 代理。无需登录"""
     resource = db.query(Resource).filter(Resource.id == resource_id).first()
     if not resource:
         raise HTTPException(status_code=404, detail="资源不存在")
+
+    # 优先用 Supabase 公开 URL（永久云存储）→ 307 跳转
+    if resource.supabase_url:
+        from fastapi.responses import RedirectResponse
+        return RedirectResponse(resource.supabase_url, status_code=302)
 
     file_path = PROJECT_ROOT / resource.path
     ext = Path(resource.path).suffix.lower()

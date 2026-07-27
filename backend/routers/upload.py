@@ -89,7 +89,36 @@ def save_and_record(file_obj, filename: str, category: str, meta: dict, db: Sess
     db.add(new)
     db.commit()
     db.refresh(new)
-    return {"id": new.id, "saved_as": filename, "path": rel_path, "id_at_github": upload_to_github(target_path, rel_path)}
+    supabase_url = upload_to_supabase(target_path, rel_path, category)
+    if supabase_url:
+        new.supabase_url = supabase_url
+        db.commit()
+    github_sha = upload_to_github(target_path, rel_path)
+    return {"id": new.id, "saved_as": filename, "path": rel_path,
+            "id_at_github": github_sha, "supabase_url": supabase_url}
+
+
+def upload_to_supabase(target_path: Path, rel_path: str, category: str) -> str | None:
+    """上传到 Supabase Storage 公开 bucket，返回公开 URL（失败 None）"""
+    supabase_url = os.getenv("SUPABASE_URL", "")
+    supabase_key = os.getenv("SUPABASE_ANON_KEY", "")
+    if not supabase_url or not supabase_key:
+        return None
+    try:
+        import requests
+        filename = target_path.name
+        bucket = "files"
+        supabase_path = f"{category}/{filename}"  # 简单层级
+        upload_url = f"{supabase_url}/storage/v1/object/{bucket}/{supabase_path}"
+        headers = {"Authorization": f"Bearer {supabase_key}"}
+        with open(target_path, "rb") as f:
+            r = requests.post(upload_url, headers=headers, data=f, timeout=60)
+        if r.status_code in (200, 201):
+            return f"{supabase_url}/storage/v1/object/public/{bucket}/{supabase_path}"
+        print(f"Supabase upload failed: {r.status_code} {r.text[:200]}")
+    except Exception as e:
+        print(f"Supabase 上传失败: {e}")
+    return None
 
 
 def upload_to_github(target_path: Path, rel_path: str) -> str:
