@@ -101,17 +101,17 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
         return (
           <div style={{ textAlign: 'center', padding: 60 }}>
             {isExcel ? <FileExcelOutlined style={{ fontSize: 48, color: '#10B981' }} /> : <FilePptOutlined style={{ fontSize: 48, color: '#FF6B00' }} />}
-            <p style={{ marginTop: 16, color: '#94A3B8' }}>Office Online 预览加载失败</p>
-            <p style={{ fontSize: 12, color: '#94A3B8' }}>可能因为文件不在 GitHub 仓库中，或网络问题</p>
+            <p style={{ marginTop: 16, color: '#94A3B8' }}>Office Online 预览不可用</p>
+            <p style={{ fontSize: 12, color: '#94A3B8' }}>
+              文件较大（&gt;50MB）或不在 GitHub 仓库中
+            </p>
             <div style={{ marginTop: 20, display: 'flex', justifyContent: 'center', gap: 12 }}>
-              <Button type="primary" onClick={() => window.open(officeUrl, '_blank')}
-                style={{ background: '#00A65E' }}>
-                在新窗口打开
-              </Button>
-              {downloadBlob && (
-                <a href={downloadBlob.url} download={downloadBlob.name}>
-                  <Button style={{ color: '#00A65E', borderColor: '#00A65E' }}>下载文件</Button>
+              {downloadBlob ? (
+                <a href={downloadBlob.url} download={resource.name}>
+                  <Button type="primary" style={{ background: '#00A65E' }}>下载文件</Button>
                 </a>
+              ) : (
+                <Spin />
               )}
             </div>
           </div>
