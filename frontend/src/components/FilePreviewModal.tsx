@@ -88,7 +88,7 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
             {isExcel ? <FileExcelOutlined style={{ fontSize: 48, color: '#10B981' }} /> : <FilePptOutlined style={{ fontSize: 48, color: '#FF6B00' }} />}
             <p style={{ marginTop: 16, color: '#94A3B8' }}>Office Online 预览加载失败</p>
             <p style={{ fontSize: 12, color: '#94A3B8', marginBottom: 16 }}>
-              文件可能因为太大（>50MB）未同步到 GitHub，或文件名含特殊字符
+              文件可能因为太大（&gt;50MB）未同步到 GitHub，或文件名含特殊字符
             </p>
             <Button type="primary" onClick={() => window.open(rawUrl, '_blank')} style={{ background: '#00A65E', marginRight: 8 }}>
               GitHub 直链
