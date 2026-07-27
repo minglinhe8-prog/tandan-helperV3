@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List
 from datetime import datetime
 from database import get_db
-from models import User, Resource
+from models import User, Resource, Favorite, History, SearchHistory
 from schemas import UserOut, ResourceOut, UserUpdate
 from auth_utils import get_current_admin_user, get_password_hash
 
@@ -111,6 +111,10 @@ def delete_resource(
     resource = db.query(Resource).filter(Resource.id == resource_id).first()
     if not resource:
         raise HTTPException(404, "资源不存在")
+    # 先清理关联表（收藏/历史/搜索），避免外键冲突
+    db.query(Favorite).filter(Favorite.resource_id == resource_id).delete()
+    db.query(History).filter(History.resource_id == resource_id).delete()
+    db.query(SearchHistory).filter(SearchHistory.resource_id == resource_id).delete()
     db.delete(resource)
     db.commit()
     return {"message": "资源已删除"}
