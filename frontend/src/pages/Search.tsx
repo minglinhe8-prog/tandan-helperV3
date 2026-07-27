@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, Row, Col, Typography, Space, message, Spin, Drawer } from 'antd';
-import { LogoutOutlined, HeartOutlined, HistoryOutlined, SettingOutlined, MenuOutlined } from '@ant-design/icons';
+import { LogoutOutlined, HeartOutlined, HistoryOutlined, SettingOutlined, MenuOutlined, CalculatorOutlined } from '@ant-design/icons';
 import { searchResources, getFavorites, addHistory } from '../api/resources';
 import { logout, getStoredUser } from '../api/auth';
 import ResourceCard from '../components/ResourceCard';
@@ -113,6 +113,9 @@ const Search: React.FC = () => {
             </Button>
             <Button type="text" size="small" icon={<HistoryOutlined />} onClick={() => navigate('/history')}>
               {!isMobile && '历史'}
+            </Button>
+            <Button type="text" size="small" icon={<CalculatorOutlined />} onClick={() => navigate('/calculator')} style={{ color: '#333' }}>
+              {!isMobile && '价格计算'}
             </Button>
             {getStoredUser()?.role === 'admin' && (
               <Button type="text" size="small" icon={<SettingOutlined />} onClick={() => navigate('/admin')} style={{ color: '#00A65E' }} />
