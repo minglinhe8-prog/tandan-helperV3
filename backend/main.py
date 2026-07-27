@@ -31,6 +31,18 @@ def health():
 def on_startup():
     """自动创建表并初始化默认数据（PostgreSQL 兼容）"""
     Base.metadata.create_all(bind=engine)
+    # 兼容老数据库：补齐新加列
+    try:
+        from sqlalchemy import text
+        from database import engine as _engine
+        with _engine.connect() as conn:
+            for ddl in [
+                "ALTER TABLE resources ADD COLUMN IF NOT EXISTS supabase_url TEXT"
+            ]:
+                try: conn.execute(text(ddl)); conn.commit()
+                except Exception as e: print(f"DDL skip: {ddl} — {e}")
+    except Exception as e:
+        print(f"⚠️ Schema migration 失败: {e}")
     try:
         from sqlalchemy.orm import Session
         from models import User
