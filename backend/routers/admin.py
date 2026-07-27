@@ -128,6 +128,8 @@ def seed_resources(
 
     BASE = PyPath("course_data")
     if not BASE.exists():
+        BASE = PyPath(__file__).parent.parent / "course_data"
+    if not BASE.exists():
         return {"error": "course_data 目录不存在"}
 
     GRADE_LIST = ["初一", "初二", "初三"]
@@ -147,7 +149,7 @@ def seed_resources(
                 skipped_ext += 1
                 continue
 
-            rel = fpath.as_posix()
+            rel = fpath.relative_to(PyPath(__file__).parent.parent).as_posix()
             parts = rel.split("/")[1:]  # skip "course_data"
             category = parts[0] if parts else "未知"
 
