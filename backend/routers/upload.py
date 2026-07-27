@@ -89,7 +89,42 @@ def save_and_record(file_obj, filename: str, category: str, meta: dict, db: Sess
     db.add(new)
     db.commit()
     db.refresh(new)
-    return {"id": new.id, "saved_as": filename, "path": rel_path}
+    return {"id": new.id, "saved_as": filename, "path": rel_path, "id_at_github": upload_to_github(target_path, rel_path)}
+
+
+def upload_to_github(target_path: Path, rel_path: str) -> str:
+    """通过 GitHub API 上传文件到公开仓库，返回 commit SHA（失败时 None）"""
+    token = os.getenv("GITHUB_TOKEN", "")
+    if not token:
+        return None
+    try:
+        import base64, requests
+        repo = os.getenv("GITHUB_REPO", "minglinhe8-prog/tandan-helperV3")
+        branch = os.getenv("GITHUB_BRANCH", "main")
+        with open(target_path, "rb") as f:
+            content = base64.b64encode(f.read()).decode()
+        url = f"https://api.github.com/repos/{repo}/contents/{rel_path}"
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
+        }
+        # 检查现有文件（获取 sha）
+        r = requests.get(url, headers=headers, params={"ref": branch}, timeout=10)
+        existing_sha = r.json().get("sha") if r.status_code == 200 else None
+        body = {
+            "message": f"upload {Path(rel_path).name} via admin",
+            "content": content,
+            "branch": branch,
+        }
+        if existing_sha:
+            body["sha"] = existing_sha
+        r = requests.put(url, headers=headers, json=body, timeout=15)
+        if r.status_code in (200, 201):
+            return r.json().get("content", {}).get("sha", "ok")
+    except Exception as e:
+        print(f"GitHub 上传失败: {e}")
+    return None
 
 
 def build_subdir(course_type: str = "", grade: str = "", subject: str = "", semester: str = "") -> str:
