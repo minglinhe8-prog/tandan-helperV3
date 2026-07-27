@@ -88,7 +88,7 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
     if (isPdf) {
       if (loading || !blobUrl) return <Spin />;
       return (
-        <div style={{ width: '100%', height: '60vh' }}>
+        <div style={{ width: '100%', height: '75vh' }}>
           <iframe src={blobUrl} title={resource.name} style={{ width: '100%', height: '100%', border: 'none' }} />
         </div>
       );
@@ -117,7 +117,7 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
         );
       }
       return (
-        <div style={{ width: '100%', height: '60vh', position: 'relative' }}>
+        <div style={{ width: '100%', height: '75vh', position: 'relative' }}>
           <iframe
             src={viewerUrl}
             title={resource.name}
@@ -148,9 +148,13 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
       open={visible}
       onCancel={onClose}
       footer={null}
-      width={isMobile ? '98%' : 880}
-      style={{ maxWidth: 900, top: isMobile ? 10 : undefined }}
-      styles={{ body: { maxHeight: isMobile ? '85vh' : undefined, padding: isMobile ? 12 : undefined } }}
+      width={isMobile ? '98%' : '95%'}
+      centered={false}
+      style={{ top: 0, maxWidth: 1600, width: '95%' }}
+      styles={{
+        body: { height: isMobile ? '85vh' : 'calc(100vh - 130px)', padding: isMobile ? 12 : 8 },
+        content: { height: '100vh' }
+      }}
       title={
         <div style={{ fontSize: 14 }}>
           <Text strong>{resource.name}</Text>
