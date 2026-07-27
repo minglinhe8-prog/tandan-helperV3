@@ -150,10 +150,9 @@ MIME_MAP = {
 def preview_resource(
     resource_id: int,
     request: Request,
-    db: Session = Depends(get_db),
-    current_user: User = Depends(auth_optional)
+    db: Session = Depends(get_db)
 ):
-    """文件预览：本地优先，否则服务端代理 GitHub Raw（跨域不丢）"""
+    """文件预览：本地优先，否则服务端代理 GitHub Raw。无需登录（Office Online 需要公开 URL）"""
     resource = db.query(Resource).filter(Resource.id == resource_id).first()
     if not resource:
         raise HTTPException(status_code=404, detail="资源不存在")

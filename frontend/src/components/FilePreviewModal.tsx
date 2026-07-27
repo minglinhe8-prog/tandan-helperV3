@@ -34,18 +34,10 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
     const isPdf = mime === '.pdf';
     const isOffice = ['.xlsx', '.xls', '.pptx', '.ppt'].includes(mime.toLowerCase());
 
-    // Office 走 Office Online（GitHub Raw），但先 HEAD 探测 GitHub 是否真有这文件
+    // Office 走 Office Online Viewer，用 Render 后端作为来源（绕过 GitHub 限制）
     if (isOffice) {
       setLoading(false);
       setViewerError(false);
-      // 1) 准备后端下载链接（始终可用）
-      apiClient.get(`/resources/${resource.id}/preview`, { responseType: 'blob' })
-        .then(res => setDownloadBlob({ url: URL.createObjectURL(res.data), name: resource.name }))
-        .catch(() => {});
-      // 2) HEAD 探测 GitHub Raw
-      fetch(`${GITHUB_RAW}/${resource.path}`, { method: 'HEAD' })
-        .then(r => { if (!r.ok) setViewerError(true); })
-        .catch(() => setViewerError(true));
       return;
     }
 
@@ -72,7 +64,7 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
 
   // Office 文件用 GitHub Raw URL（公开可访问）
   const officeUrl = isOffice
-    ? `https://raw.githubusercontent.com/minglinhe8-prog/tandan-helperV3/main/${resource.path}`
+    ? `https://tandan-helper.onrender.com/api/resources/${resource.id}/preview`
     : '';
   const viewerUrl = isOffice
     ? `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(officeUrl)}`
