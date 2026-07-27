@@ -53,5 +53,20 @@ if not static_dir.exists():
 
 if static_dir.exists():
     app.mount("/", StaticFiles(directory=str(static_dir), html=True), name="static")
+
+    # SPA fallback: 非 /api/* 路径返回 index.html
+    from fastapi.responses import FileResponse
+    from fastapi import Request
+    from fastapi.responses import JSONResponse
+
+    @app.exception_handler(404)
+    async def spa_fallback(request: Request, exc):
+        path = request.url.path
+        if path.startswith("/api/"):
+            return JSONResponse(status_code=404, content={"detail": "Not Found"})
+        index_file = static_dir / "index.html"
+        if index_file.exists():
+            return FileResponse(index_file)
+        return JSONResponse(status_code=404, content={"detail": "Not Found"})
 else:
     print("⚠️ 静态文件目录不存在")
