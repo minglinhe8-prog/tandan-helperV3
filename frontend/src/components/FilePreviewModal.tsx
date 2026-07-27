@@ -5,6 +5,7 @@ import type { Resource } from '../types';
 import { apiClient } from '../api/client';
 
 const { Text } = Typography;
+const GITHUB_RAW = 'https://raw.githubusercontent.com/minglinhe8-prog/tandan-helperV3/main';
 
 interface Props {
   resource: Resource | null;
