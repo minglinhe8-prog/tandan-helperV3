@@ -149,7 +149,7 @@ const RULES: Record<string, any> = {
 };
 
 /* ====== 工具函数 ====== */
-const fmt = (n: number) => n.toFixed(0);
+const fmt = (n: number) => n.toFixed(1);
 const fmt2 = (n: number) => n.toFixed(2);
 
 function findTier(arr: { maxN: number; [k: string]: any }[], n: number) {
