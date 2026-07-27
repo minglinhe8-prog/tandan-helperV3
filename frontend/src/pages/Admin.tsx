@@ -47,10 +47,14 @@ const Admin: React.FC = () => {
     loadUsers();
   };
   const handleDeleteUser = async (userId: number) => {
-    await deleteUser(userId); message.success('已删除'); loadUsers();
+    try {
+      await deleteUser(userId); message.success('用户已删除'); loadUsers();
+    } catch (e) { message.error('删除失败'); }
   };
   const handleDeleteResource = async (id: number) => {
-    await deleteResource(id); message.success('已删除'); loadResources(); loadStats();
+    try {
+      await deleteResource(id); message.success('已删除'); loadResources(); loadStats();
+    } catch (e) { message.error('删除失败'); }
   };
 
   const handleUpload = async () => {
