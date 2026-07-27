@@ -33,13 +33,18 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
     const isPdf = mime === '.pdf';
     const isOffice = ['.xlsx', '.xls', '.pptx', '.ppt'].includes(mime.toLowerCase());
 
-    // Office 走 Office Online，GitHub 无文件的（>50MB）用后端下载兜底
+    // Office 走 Office Online（GitHub Raw），但先 HEAD 探测 GitHub 是否真有这文件
     if (isOffice) {
       setLoading(false);
       setViewerError(false);
+      // 1) 准备后端下载链接（始终可用）
       apiClient.get(`/resources/${resource.id}/preview`, { responseType: 'blob' })
         .then(res => setDownloadBlob({ url: URL.createObjectURL(res.data), name: resource.name }))
         .catch(() => {});
+      // 2) HEAD 探测 GitHub Raw
+      fetch(`${GITHUB_RAW}/${resource.path}`, { method: 'HEAD' })
+        .then(r => { if (!r.ok) setViewerError(true); })
+        .catch(() => setViewerError(true));
       return;
     }
 
