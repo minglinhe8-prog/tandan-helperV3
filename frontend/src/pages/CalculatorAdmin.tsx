@@ -25,8 +25,8 @@ const CalculatorAdmin: React.FC = () => {
       .catch(() => { message.error('加载失败'); setLoading(false); });
   }, []);
 
-  if (loading) return <Spin tip="加载中..." style={{ margin: 80 }} />;
-  if (!rules || !data) return <div style={{ padding: 40 }}>加载失败</div>;
+  if (loading) return <div style={{ padding: 80, textAlign: 'center' }}><Spin size="large" tip="加载折扣规则..." /></div>;
+  if (!rules || !data) return <div style={{ padding: 40, textAlign: 'center', color: '#9ca3af' }}>加载失败，请刷新页面</div>;
 
   // 当前选中的场景/年级/身份
   const sc = rules[scene];
