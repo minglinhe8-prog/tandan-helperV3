@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Layout, Card, Select, InputNumber, Button, Tag, Spin } from 'antd';
+import { Layout, Card, Select, InputNumber, Button, Tag } from 'antd';
 import { ClearOutlined } from '@ant-design/icons';
 import { apiClient } from '../api/client';
 
