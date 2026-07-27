@@ -6,6 +6,7 @@ import Favorites from './pages/Favorites';
 import History from './pages/History';
 import Admin from './pages/Admin';
 import Calculator from './pages/Calculator';
+import CalculatorAdmin from './pages/CalculatorAdmin';
 import PrivateRoute from './components/PrivateRoute';
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path="/history" element={<History />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/calculator-admin" element={<CalculatorAdmin />} />
         </Route>
       </Routes>
     </BrowserRouter>

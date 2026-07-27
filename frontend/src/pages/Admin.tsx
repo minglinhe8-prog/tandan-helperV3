@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Layout, Tabs, Table, Button, Card, Statistic, Row, Col, Tag, Select, Space, message, Popconfirm, Switch, Typography } from 'antd';
-import { ArrowLeftOutlined, TeamOutlined, FileOutlined, DashboardOutlined, UploadOutlined, InboxOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, TeamOutlined, FileOutlined, DashboardOutlined, UploadOutlined, InboxOutlined, CalculatorOutlined } from '@ant-design/icons';
 import { getStats, getUsers, updateUser, deleteUser } from '../api/admin';
 import { getStoredUser } from '../api/auth';
 import { apiClient } from '../api/client';
@@ -151,6 +151,19 @@ const Admin: React.FC = () => {
             {
               key: 'resources', label: <span><FileOutlined /> 资源管理</span>,
               children: <ResourceTable />,
+            },
+            {
+              key: 'calc', label: <span><CalculatorOutlined /> 折扣规则</span>,
+              children: (
+                <div style={{ padding: 16, textAlign: 'center' }}>
+                  <p style={{ marginBottom: 16, color: '#64748b' }}>编辑价格计算器的折扣规则和价格数据</p>
+                  <Button type="primary" icon={<CalculatorOutlined />}
+                    onClick={() => navigate('/calculator-admin')}
+                    style={{ background: '#2563eb', fontWeight: 700 }}>
+                    进入折扣规则管理面板
+                  </Button>
+                </div>
+              ),
             },
             {
               key: 'upload', label: <span><UploadOutlined /> 上传文件</span>,

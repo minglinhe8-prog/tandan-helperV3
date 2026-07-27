@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Layout, Card, Tabs, Select, InputNumber, Button, Tag } from 'antd';
-import { CalculatorOutlined, ClearOutlined } from '@ant-design/icons';
+import { Layout, Card, Select, InputNumber, Button, Tag, Spin } from 'antd';
+import { ClearOutlined } from '@ant-design/icons';
+import { apiClient } from '../api/client';
 
 const { Content } = Layout;
 const { Option } = Select;
@@ -157,7 +158,7 @@ function findTier(arr: { maxN: number; [k: string]: any }[], n: number) {
   return arr[arr.length - 1];
 }
 
-function getSections(scene: string, grade: string, id: string): any[] {
+function getSections(RULES: any, scene: string, grade: string, id: string): any[] {
   const sc = RULES[scene];
   const sects = sc.sections;
   if (Array.isArray(sects)) return sects;
@@ -175,6 +176,18 @@ function getQuarters(sec: any, id: string): string[] {
 
 /* ====== 组件 ====== */
 const Calculator: React.FC = () => {
+  const [DATA, setDATA] = useState<Record<string, any> | null>(null);
+  const [RULES, setRULES] = useState<Record<string, any> | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    Promise.all([
+      apiClient.get('/calculator/data').then(r => r.data),
+      apiClient.get('/calculator/rules').then(r => r.data),
+    ]).then(([d, r]) => { setDATA(d); setRULES(r); setLoading(false); })
+      .catch(() => setLoading(false));
+  }, []);
+
   const [scene, setScene] = useState<string>('s1');
   const [grade, setGrade] = useState<string>('初二');
   const [identity, setIdentity] = useState<string>('old');
@@ -182,8 +195,9 @@ const Calculator: React.FC = () => {
   const [selSubj, setSelSubj] = useState<Record<number, Record<string, Record<string, boolean>>>>({});
   const [result, setResult] = useState<any>(null);
 
+  if (loading || !DATA || !RULES) return <Spin tip="加载配置中..." style={{ margin: 80 }} />;
   const sc = RULES[scene];
-  const sections = getSections(scene, grade, identity);
+  const sections = getSections(RULES, scene, grade, identity);
 
   // 计算
   const recalc = useCallback(() => {
@@ -298,7 +312,7 @@ const Calculator: React.FC = () => {
 
     const finalPrice = Math.max(0, totalOrig - totalDisc - coupon);
     setResult({ rowsOut, totalOrig, totalDisc, coupon, finalPrice, totalHrs, grade, identity, scene, sc });
-  }, [selSubj, grade, identity, coupon, scene, sections]);
+  }, [selSubj, grade, identity, coupon, scene, sections, DATA]);
 
   useEffect(() => { recalc(); }, [recalc]);
 

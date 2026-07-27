@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
-from routers import auth, resources, favorites, history, admin, upload
+from routers import auth, resources, favorites, history, admin, upload, calculator
 from database import engine, Base
 
 app = FastAPI(title="谈单助手 API", version="1.0.0")
@@ -21,6 +21,7 @@ app.include_router(favorites.router)
 app.include_router(history.router)
 app.include_router(admin.router)
 app.include_router(upload.router)
+app.include_router(calculator.router)
 
 @app.get("/api/health")
 def health():
@@ -37,7 +38,8 @@ def on_startup():
         from database import engine as _engine
         with _engine.connect() as conn:
             for ddl in [
-                "ALTER TABLE resources ADD COLUMN IF NOT EXISTS supabase_url TEXT"
+                "ALTER TABLE resources ADD COLUMN IF NOT EXISTS supabase_url TEXT",
+                "CREATE TABLE IF NOT EXISTS calculator_config (key TEXT PRIMARY KEY, payload TEXT NOT NULL, updated_at TIMESTAMP, updated_by INTEGER)"
             ]:
                 try: conn.execute(text(ddl)); conn.commit()
                 except Exception as e: print(f"DDL skip: {ddl} — {e}")

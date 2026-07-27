@@ -64,3 +64,12 @@ class SearchHistory(Base):
     searched_at = Column(DateTime, default=datetime.utcnow)
 
     user = relationship("User", back_populates="search_histories")
+
+
+class CalculatorConfig(Base):
+    """价格计算器配置 — 存储 data.json 和 rules.json"""
+    __tablename__ = "calculator_config"
+    key = Column(String, primary_key=True, index=True)  # 'data' 或 'rules'
+    payload = Column(Text, nullable=False)  # JSON 字符串
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    updated_by = Column(Integer, ForeignKey("users.id"), nullable=True)
