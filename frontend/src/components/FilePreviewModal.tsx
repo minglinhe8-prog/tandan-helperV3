@@ -77,20 +77,25 @@ const FilePreviewModal: React.FC<Props> = ({ resource, visible, onClose }) => {
       return <Image src={blobUrl} alt={resource.name} style={{ maxWidth: '100%', maxHeight: '75vh', objectFit: 'contain' }} />;
     }
 
-    // PDF — 用 blob URL（带 Authorization 头，避免 401）
+    // PDF — 新窗口打开（Chrome 内置 PDF 阅读器，比 iframe 稳定）
     if (isPdf) {
       if (loading) return <Spin />;
-      if (blobUrl) {
-        return (
-          <div style={{ width: '100%', height: '75vh' }}>
-            <iframe src={blobUrl} title={resource.name} style={{ width: '100%', height: '100%', border: 'none' }} />
-          </div>
-        );
-      }
-      // 兜底：直接读 rawUrl（GitHub 老文件）
       return (
-        <div style={{ width: '100%', height: '75vh' }}>
-          <iframe src={rawUrl} title={resource.name} style={{ width: '100%', height: '100%', border: 'none' }} />
+        <div style={{ textAlign: 'center', padding: 60 }}>
+          <FilePdfOutlined style={{ fontSize: 48, color: '#EF4444' }} />
+          <p style={{ marginTop: 20, fontSize: 15, color: '#1E293B' }}>{resource.name}</p>
+          <p style={{ fontSize: 12, color: '#94A3B8', marginTop: 4 }}>{resource.file_size?.toFixed(1)} KB</p>
+          <div style={{ marginTop: 20, display: 'flex', justifyContent: 'center', gap: 12 }}>
+            <Button type="primary" onClick={() => {
+              if (blobUrl) window.open(blobUrl, '_blank');
+              else window.open(rawUrl, '_blank');
+            }} style={{ background: '#EF4444' }}>
+              在新窗口打开
+            </Button>
+            <a href={blobUrl || rawUrl} download={resource.name}>
+              <Button style={{ color: '#EF4444', borderColor: '#EF4444' }}>下载文件</Button>
+            </a>
+          </div>
         </div>
       );
     }
